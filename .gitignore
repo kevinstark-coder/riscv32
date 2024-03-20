@@ -3,7 +3,7 @@ points.json
 *.parsed.json
 
 # Verilator build directory
-sim_build/
+#sim_build/
 
 # things created by Vivado
 *.bit

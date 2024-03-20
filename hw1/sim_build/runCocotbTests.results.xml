@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="12345" />
+    <testcase name="test_rca4" classname="testbench" file="/home/penn/riscv32/hw1/testbench.py" lineno="148" time="0.0390782356262207" sim_time_ns="1025.0" ratio_time="26229.433943845863" />
+  </testsuite>
+</testsuites>

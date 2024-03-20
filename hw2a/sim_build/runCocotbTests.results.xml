@@ -1,0 +1,8 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="12345" />
+    <testcase name="test_rem_lt_divisor" classname="testbench_1iter" file="/home/penn/riscv32/hw2a/testbench_1iter.py" lineno="54" time="0.0013844966888427734" sim_time_ns="3.0" ratio_time="2166.8524194937145" />
+    <testcase name="test_rem_gte_divisor" classname="testbench_1iter" file="/home/penn/riscv32/hw2a/testbench_1iter.py" lineno="67" time="0.00027441978454589844" sim_time_ns="3.0" ratio_time="10932.156385751521" />
+    <testcase name="test_random1k" classname="testbench_1iter" file="/home/penn/riscv32/hw2a/testbench_1iter.py" lineno="80" time="0.13069438934326172" sim_time_ns="2001.0" ratio_time="15310.52717760119" />
+  </testsuite>
+</testsuites>
