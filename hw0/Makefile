@@ -3,7 +3,7 @@ help:
 	@echo available commands: '`make build`', '`make start`' and '`make run`'
 
 build:
-	riscv64-unknown-elf-as -march=rv32im -mabi=ilp32 uppercase.S -o uppercase.o
+	riscv64-unknown-elf-as -march=rv32im -mabi=ilp32 loop.S -o uppercase.o
 	riscv64-unknown-elf-ld -A rv32 --oformat elf32-littleriscv -Tdata=0x2000 uppercase.o -o uppercase.bin
 	riscv64-unknown-elf-objdump -d uppercase.bin > uppercase.disasm.s
 

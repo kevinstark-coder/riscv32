@@ -10,23 +10,53 @@
 `include "../hw2b/cla.sv"
 
 module RegFile (
+    input logic we,
     input logic [4:0] rd,
     input logic [`REG_SIZE] rd_data,
+
     input logic [4:0] rs1,
-    output logic [`REG_SIZE] rs1_data,
+    output logic [`REG_SIZE] rs1_data,  
     input logic [4:0] rs2,
     output logic [`REG_SIZE] rs2_data,
 
     input logic clk,
-    input logic we,
     input logic rst
 );
   localparam int NumRegs = 32;
   logic [`REG_SIZE] regs[NumRegs];
 
+  integer i;
   // TODO: your code here
+    always@(posedge clk)
+    begin
+      if(rst)
+        begin
+          for(i=0;i<32;i=i+1)
+          begin
+            regs[i] <= 32'b0;
+          end
+        end
+      else
+      begin
+        if(we && rd!=5'b0) regs[rd] <= rd_data;
+      end
+    end
 
+  
+  always@(*) begin
+    if(rst)  
+      begin
+        rs1_data = 32'b0;
+        rs2_data = 32'b0;
+      end
+    else
+      begin
+        rs1_data = regs[rs1];
+        rs2_data = regs[rs2];
+      end
+  end
 endmodule
+
 
 module DatapathSingleCycle (
     input wire clk,
@@ -49,6 +79,8 @@ module DatapathSingleCycle (
   wire [4:0] insn_rd;
   wire [`OPCODE_SIZE] insn_opcode;
 
+  
+
   // split R-type instruction - see section 2.2 of RiscV spec
   assign {insn_funct7, insn_rs2, insn_rs1, insn_funct3, insn_rd, insn_opcode} = insn_from_imem;
 
@@ -62,7 +94,7 @@ module DatapathSingleCycle (
   wire [11:0] imm_s;
   assign imm_s[11:5] = insn_funct7, imm_s[4:0] = insn_rd;
 
-  // B - conditionals
+  // B - conditionals //yqk, immediates tar12 becomes directly 13 bit here by setting imm_b[0]= 1'n0
   wire [12:0] imm_b;
   assign {imm_b[12], imm_b[10:5]} = insn_funct7, {imm_b[4:1], imm_b[11]} = insn_rd, imm_b[0] = 1'b0;
 
@@ -170,6 +202,7 @@ module DatapathSingleCycle (
       pcCurrent <= pcNext;
     end
   end
+  //question of pcnext yqk
   assign pc_to_imem = pcCurrent;
 
   // cycle/insn_from_imem counters
@@ -180,28 +213,312 @@ module DatapathSingleCycle (
       num_insns_current <= 0;
     end else begin
       cycles_current <= cycles_current + 1;
-      if (!rst) begin
+      if (!rst) 
+      begin
         num_insns_current <= num_insns_current + 1;
       end
     end
   end
 
+
   logic illegal_insn;
+//reg
+  logic we;
+  logic [`REG_SIZE] rd_data;
+  logic [`REG_SIZE] rs1_data;
+  logic [`REG_SIZE] rs2_data;
+  // cla
+  logic [`REG_SIZE] cla_a;
+  logic [`REG_SIZE] cla_b;
+  logic cla_cin;
+  logic [`REG_SIZE] cla_sum;
+
+  // divider
+  logic [`REG_SIZE] div_dividend;
+  logic [`REG_SIZE] div_divisor;
+  logic [`REG_SIZE] div_remainder;
+  logic [`REG_SIZE] div_quotient;
+
+  // mul
+  logic [63:0] mul;
+  logic [63:0] mulh;
+  logic [63:0] mulhsu;
+  logic [63:0] mulhu;
 
   always_comb begin
-    illegal_insn = 1'b0;
+    store_we_to_dmem = 4'b0000;
+    store_data_to_dmem = 32'b0;
+    addr_to_dmem = 32'b0;
+    we = 1'b0;
+    rd_data = 32'd0;
 
+    cla_a = 32'd0;
+    cla_b = 32'd0;
+    cla_cin = 1'b0;
+
+    div_dividend = 32'd0;
+    div_divisor = 32'd0;
+    
+    mul = 64'd0;
+    mulh = 64'd0;
+    mulhsu = 64'd0;
+    mulhu = 64'd0;
+
+    pcNext = pcCurrent + 32'd4;
+    
+    halt = 1'b0;
+    illegal_insn = 1'b0;
     case (insn_opcode)
+
       OpLui: begin
-        // TODO: start here by implementing lui
+        //assign {insn_funct7, insn_rs2, insn_rs1, insn_funct3, insn_rd, insn_opcode} = insn_from_imem;
+        we = 1;
+        rd_data = {insn_from_imem[31:12],12'b0}; 
       end
+
+      OpRegImm:begin
+        we = 1'b1;
+        if(insn_addi)begin
+          cla_cin = 1'b0;
+          cla_a = rs1_data;
+          cla_b = imm_i_sext;
+          rd_data = cla_sum;
+        end
+        else if(insn_slti)begin //yqk
+          rd_data = $signed(rs1_data) < $signed(imm_i_sext) ? 32'b1:32'b0;
+        end
+        else if(insn_sltiu)begin //yqk
+          rd_data = rs1_data < imm_i_sext ? 32'b1:32'b0;
+        end
+        else if(insn_xori)begin
+          rd_data = rs1_data ^ imm_i_sext;
+        end
+        else if(insn_ori)begin
+          rd_data = rs1_data | imm_i_sext;
+        end
+        else if(insn_andi)begin
+          rd_data = rs1_data & imm_i_sext;
+        end
+        else if(insn_slli)begin //yqk
+          rd_data = rs1_data << imm_i[4:0];
+        end
+        else if(insn_srli)begin //yqk
+          rd_data = rs1_data >> imm_i[4:0];
+        end
+        else if(insn_srai)begin //yqk
+          rd_data = $signed(rs1_data) >>> $signed(imm_i[4:0]);
+        end
+      end
+
+      OpBranch: begin
+        if (insn_beq) begin             
+          if (rs1_data == rs2_data)
+            pcNext = pcCurrent + imm_b_sext;
+
+        end else if (insn_bne) begin
+          if (rs1_data != rs2_data)
+            pcNext = pcCurrent + imm_b_sext;
+
+        end else if (insn_blt) begin
+            if ($signed(rs1_data) < $signed(rs2_data))
+              pcNext = pcCurrent + imm_b_sext;
+
+        end else if (insn_bge) begin
+            if ($signed(rs1_data) >= $signed(rs2_data))
+              pcNext = pcCurrent + imm_b_sext;
+
+        end else if (insn_bltu) begin
+            if (rs1_data < rs2_data)
+              pcNext = pcCurrent + imm_b_sext;
+
+        end else if (insn_bgeu) begin
+            if (rs1_data >= rs2_data)
+            pcNext = pcCurrent + imm_b_sext;
+        end
+      end
+
+      OpRegReg: begin
+        we = 1'b1;
+        if (insn_add) begin
+          cla_a = rs1_data;
+          cla_b = rs2_data;
+          cla_cin = 1'b0;
+          rd_data = cla_sum;
+
+        end else if (insn_sub) begin
+          cla_a = rs1_data;
+          cla_b = ~rs2_data + 32'b1;
+          cla_cin = 1'b0;
+          rd_data = cla_sum;
+            
+        end else if (insn_sll) begin
+          rd_data = rs1_data << rs2_data[4:0];
+
+        end else if (insn_slt) begin
+          rd_data = ($signed(rs1_data) < $signed(rs2_data)) ? 1:0;
+
+        end else if (insn_sltu) begin
+          rd_data = (rs1_data < rs2_data) ? 1:0;
+
+        end else if (insn_xor) begin
+          rd_data = rs1_data ^ rs2_data;
+
+        end else if (insn_srl) begin
+          rd_data = rs1_data >> rs2_data[4:0];
+
+        end else if (insn_sra) begin
+          rd_data = $signed(rs1_data) >>> rs2_data[4:0];
+
+        end else if (insn_or) begin
+          rd_data = rs1_data | rs2_data;
+
+        end else if (insn_and) begin
+          rd_data = rs1_data & rs2_data;
+
+        end else if (insn_mul) begin
+          mul = rs1_data * rs2_data;
+          rd_data = mul[31:0];
+
+        end else if (insn_mulh) begin
+          mulh = $signed(rs1_data) * $signed(rs2_data);
+          rd_data = mulh[63:32];
+
+        end else if (insn_mulhsu) begin
+          mulhsu = $signed(rs1_data) * rs2_data;
+          rd_data = mulhsu[63:32];
+
+        end else if (insn_mulhu) begin
+          mulhu = rs1_data * rs2_data;
+          rd_data = mulhu[63:32];
+
+        end else if (insn_div) begin
+          div_dividend = $signed(rs1_data);
+          div_divisor = $signed(rs2_data);
+          rd_data = div_quotient;
+          
+        end else if (insn_divu) begin
+          div_dividend = rs1_data;
+          div_divisor = rs2_data;
+          rd_data = div_quotient;
+          
+        end else if (insn_rem) begin
+          div_dividend = $signed(rs1_data);
+          div_divisor = $signed(rs2_data);
+          rd_data = div_remainder;
+          
+        end else if (insn_remu) begin        
+          div_dividend = rs1_data;
+          div_divisor = rs2_data;
+          rd_data = div_remainder;
+        
+        end
+      end
+
+      OpEnviron: begin
+        if (insn_ecall) begin
+          halt = 1'b1;
+          
+        end
+      end
+      
+      OpJal:begin
+        rd_data = pcCurrent + 32'd4;
+        pcNext  = pcCurrent + imm_j_sext;
+      end
+
+      OpJalr:begin
+        we = 1'b1;
+        rd_data = pcCurrent + 32'd4;
+        pcNext  = (rs1_data + imm_i_sext)& (~32'b1);
+      end
+
+      OpAuipc: begin
+        we = 1'b1;
+        rd_data = pcCurrent + {insn_from_imem[31:12], 12'd0};
+      end
+
+      OpLoad: begin
+        we = 1'b1;
+        if (insn_lb) begin
+          addr_to_dmem = rs1_data + imm_i_sext;
+          rd_data = {{24{load_data_from_dmem[7]}},load_data_from_dmem[7:0]}; //yqk
+        end 
+
+        else if (insn_lh) begin
+          addr_to_dmem = rs1_data + imm_i_sext;
+          rd_data = {{16{load_data_from_dmem[15]}},load_data_from_dmem[15:0]}; //yqk
+        end
+
+        else if (insn_lw) begin
+        addr_to_dmem = rs1_data + imm_i_sext;
+        rd_data = load_data_from_dmem; //yqk
+        end
+        else if (insn_lbu)begin
+          addr_to_dmem = rs1_data + imm_i_sext;
+          rd_data = {24'b0,load_data_from_dmem[7:0]};
+        end
+        else if (insn_lhu)begin
+          addr_to_dmem = rs1_data + imm_i_sext;
+          rd_data = {16'b0,load_data_from_dmem[15:0]};
+        end
+      end
+
+      OpStore:begin
+        if(insn_sb)begin
+          store_we_to_dmem = 4'b0001;
+          store_data_to_dmem[7:0] = rs2_data[7:0];
+          addr_to_dmem = rs1_data + imm_i_sext;
+        end
+        if(insn_sh)begin
+          store_we_to_dmem = 4'b0011;
+          store_data_to_dmem[15:0] = rs2_data[15:0];
+          addr_to_dmem = rs1_data + imm_i_sext;
+        end
+        if(insn_sw)begin
+          store_we_to_dmem = 4'b1111;
+          store_data_to_dmem = rs2_data;
+          addr_to_dmem = rs1_data + imm_i_sext;
+        end
+      end
+
       default: begin
         illegal_insn = 1'b1;
       end
+      
+
     endcase
   end
 
+RegFile rf(
+    .we(we),
+    .rd(insn_rd),
+    .rd_data(rd_data),
+
+    .rs1(insn_rs1),
+    .rs1_data(rs1_data),  
+    .rs2(insn_rs2),
+    .rs2_data(rs2_data),
+
+    .clk(clk),
+    .rst(rst)
+);
+
+cla cla(
+  .a(cla_a),
+  .b(cla_b),
+  .cin(cla_cin),
+  .sum(cla_sum)
+);
+
+divider_unsigned div(
+  .i_dividend(div_dividend),
+  .i_divisor(div_divisor),
+  .o_remainder(div_remainder),
+  .o_quotient(div_quotient)
+);
+
 endmodule
+
 
 /* A memory module that supports 1-cycle reads and writes, with one read-only port
  * and one read+write port.

@@ -100,6 +100,16 @@ async def test_simple3(dut):
     assert 2 == dut.o_remainder.value
 
 @cocotb.test()
+async def test_simple5(dut):
+    await Timer(1, "ns")
+    dut.i_dividend.value = 30
+    dut.i_divisor.value = 4
+    await Timer(1, "ns")
+    assert 7 == dut.o_quotient.value
+    assert 2 == dut.o_remainder.value
+
+
+@cocotb.test()
 async def test_random1k(dut):
     for i in range(1000):
         await Timer(1, "ns")
