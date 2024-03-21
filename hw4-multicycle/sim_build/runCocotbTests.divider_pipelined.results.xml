@@ -1,0 +1,17 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="12345" />
+    <testcase name="test0" classname="testbench_divider_pipelined" file="/home/penn/riscv32/hw4-multicycle/testbench_divider_pipelined.py" lineno="75" time="0.0035071372985839844" sim_time_ns="10.0" ratio_time="2851.3283480625423">
+      <failure message="Test failed with RANDOM_SEED=12345" />
+    </testcase>
+    <testcase name="test1" classname="testbench_divider_pipelined" file="/home/penn/riscv32/hw4-multicycle/testbench_divider_pipelined.py" lineno="85" time="0.0011746883392333984" sim_time_ns="10.0" ratio_time="8512.896285772274">
+      <failure message="Test failed with RANDOM_SEED=12345" />
+    </testcase>
+    <testcase name="test_2consecutive" classname="testbench_divider_pipelined" file="/home/penn/riscv32/hw4-multicycle/testbench_divider_pipelined.py" lineno="95" time="0.001077413558959961" sim_time_ns="10.0" ratio_time="9281.48705465811">
+      <failure message="Test failed with RANDOM_SEED=12345" />
+    </testcase>
+    <testcase name="test_kconsecutive" classname="testbench_divider_pipelined" file="/home/penn/riscv32/hw4-multicycle/testbench_divider_pipelined.py" lineno="137" time="0.002145051956176758" sim_time_ns="10.0" ratio_time="4661.891741691675">
+      <failure message="Test failed with RANDOM_SEED=12345" />
+    </testcase>
+  </testsuite>
+</testsuites>

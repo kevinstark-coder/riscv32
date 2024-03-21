@@ -1,6 +1,6 @@
 <testsuites name="results">
   <testsuite name="all" package="all">
     <property name="random_seed" value="12345" />
-    <testcase name="riscvTest_002" classname="testbench" file="/usr/local/lib/python3.10/dist-packages/cocotb/regression.py" lineno="731" time="0.05116462707519531" sim_time_ns="248.001" ratio_time="4847.118295917987" />
+    <testcase name="riscvTest_002" classname="testbench" file="/usr/local/lib/python3.10/dist-packages/cocotb/regression.py" lineno="731" time="0.05271291732788086" sim_time_ns="248.001" ratio_time="4704.748144698635" />
   </testsuite>
 </testsuites>
