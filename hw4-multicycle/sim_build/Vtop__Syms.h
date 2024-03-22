@@ -65,7 +65,7 @@ class alignas(VL_CACHE_LINE_BYTES)Vtop__Syms final : public VerilatedSyms {
     Vtop_divu_1iter                TOP__divider_unsigned_pipelined__DOT__genblk2__BRA__9__KET____DOT__d1;
 
     // COVERAGE
-    uint32_t __Vcoverage[550];
+    uint32_t __Vcoverage[549];
 
     // SCOPE NAMES
     VerilatedScope __Vscope_TOP;
@@ -134,7 +134,6 @@ class alignas(VL_CACHE_LINE_BYTES)Vtop__Syms final : public VerilatedSyms {
     VerilatedScope __Vscope_divider_unsigned_pipelined__genblk2__BRA__8__KET____d1;
     VerilatedScope __Vscope_divider_unsigned_pipelined__genblk2__BRA__9__KET__;
     VerilatedScope __Vscope_divider_unsigned_pipelined__genblk2__BRA__9__KET____d1;
-    VerilatedScope __Vscope_divider_unsigned_pipelined__unnamedblk1;
 
     // SCOPE HIERARCHY
     VerilatedHierarchy __Vhier;

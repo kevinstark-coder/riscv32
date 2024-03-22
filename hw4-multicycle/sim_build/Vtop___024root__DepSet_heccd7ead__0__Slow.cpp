@@ -164,8 +164,6 @@ VL_ATTR_COLD void Vtop___024root___ctor_var_reset(Vtop___024root* vlSelf) {
     for (int __Vi0 = 0; __Vi0 < 17; ++__Vi0) {
         vlSelf->divider_unsigned_pipelined__DOT__quotient_1[__Vi0] = VL_RAND_RESET_I(32);
     }
-    vlSelf->divider_unsigned_pipelined__DOT__quotient = VL_RAND_RESET_I(32);
-    vlSelf->divider_unsigned_pipelined__DOT__remainder = VL_RAND_RESET_I(32);
     for (int __Vi0 = 0; __Vi0 < 17; ++__Vi0) {
         vlSelf->divider_unsigned_pipelined__DOT__divided_2[__Vi0] = VL_RAND_RESET_I(32);
     }
@@ -175,6 +173,8 @@ VL_ATTR_COLD void Vtop___024root___ctor_var_reset(Vtop___024root* vlSelf) {
     for (int __Vi0 = 0; __Vi0 < 17; ++__Vi0) {
         vlSelf->divider_unsigned_pipelined__DOT__quotient_2[__Vi0] = VL_RAND_RESET_I(32);
     }
+    vlSelf->divider_unsigned_pipelined__DOT__remainder = VL_RAND_RESET_I(32);
+    vlSelf->divider_unsigned_pipelined__DOT__quotient = VL_RAND_RESET_I(32);
     vlSelf->divider_unsigned_pipelined__DOT__a = VL_RAND_RESET_I(32);
     vlSelf->divider_unsigned_pipelined__DOT__b = VL_RAND_RESET_I(32);
     vlSelf->divider_unsigned_pipelined__DOT__c = VL_RAND_RESET_I(32);
@@ -184,11 +184,10 @@ VL_ATTR_COLD void Vtop___024root___ctor_var_reset(Vtop___024root* vlSelf) {
     vlSelf->divider_unsigned_pipelined__DOT____Vtogcov__i_divisor = VL_RAND_RESET_I(32);
     vlSelf->divider_unsigned_pipelined__DOT____Vtogcov__o_remainder = VL_RAND_RESET_I(32);
     vlSelf->divider_unsigned_pipelined__DOT____Vtogcov__o_quotient = VL_RAND_RESET_I(32);
-    vlSelf->divider_unsigned_pipelined__DOT____Vtogcov__quotient = VL_RAND_RESET_I(32);
     vlSelf->divider_unsigned_pipelined__DOT____Vtogcov__remainder = VL_RAND_RESET_I(32);
+    vlSelf->divider_unsigned_pipelined__DOT____Vtogcov__quotient = VL_RAND_RESET_I(32);
     vlSelf->divider_unsigned_pipelined__DOT____Vtogcov__a = VL_RAND_RESET_I(32);
     vlSelf->divider_unsigned_pipelined__DOT____Vtogcov__b = VL_RAND_RESET_I(32);
     vlSelf->divider_unsigned_pipelined__DOT____Vtogcov__c = VL_RAND_RESET_I(32);
-    vlSelf->divider_unsigned_pipelined__DOT__unnamedblk1__DOT__j = 0;
     vlSelf->__Vtrigprevexpr___TOP__clk__0 = VL_RAND_RESET_I(1);
 }
