@@ -215,38 +215,38 @@ if __name__ == "__main__":
 #     await ClockCycles(dut.clock_proc, 4)
 #     assert dut.datapath.rf.regs[2].value == 1, f'failed at cycle {dut.datapath.cycles_current.value.integer}'
 
-# @cocotb.test()
-# async def test2Divu(dut):
-#     "Run back-to-back divu insns"
-#     asm(dut, '''
-#         li x16,16
-#         li x8,8
-#         li x2,2
-#         divu x3,x16,x2
-#         divu x3,x8,x2''')
-#     await preTestSetup(dut)
-
-#     await ClockCycles(dut.clock_proc, 6)
-#     assert dut.datapath.rf.regs[3].value == 8, f'failed at cycle {dut.datapath.cycles_current.value.integer}'
-#     await ClockCycles(dut.clock_proc, 2)
-#     assert dut.datapath.rf.regs[3].value == 4, f'failed at cycle {dut.datapath.cycles_current.value.integer}'
-
 @cocotb.test()
-async def testDivuEtAl(dut):
+async def test2Divu(dut):
     "Run back-to-back divu insns"
     asm(dut, '''
         li x16,16
+        li x8,8
         li x2,2
-        divu x8,x16,x2
-        addi x9,x8,1''')
+        divu x3,x16,x2
+        divu x3,x8,x2''')
     await preTestSetup(dut)
 
-    # Since divu takes 2 cycles, li,li,divu takes 4 cycles to complete
-    # and result is available in the 5th cycle.
-    await ClockCycles(dut.clock_proc, 5)
-    assert dut.datapath.rf.regs[8].value == 8, f'failed at cycle {dut.datapath.cycles_current.value.integer}'
-    await ClockCycles(dut.clock_proc, 1) # wait one more cycle for addi's result
-    assert dut.datapath.rf.regs[9].value == 9, f'failed at cycle {dut.datapath.cycles_current.value.integer}'
+    await ClockCycles(dut.clock_proc, 6)
+    assert dut.datapath.rf.regs[3].value == 8, f'failed at cycle {dut.datapath.cycles_current.value.integer}'
+    await ClockCycles(dut.clock_proc, 2)
+    assert dut.datapath.rf.regs[3].value == 4, f'failed at cycle {dut.datapath.cycles_current.value.integer}'
+
+# @cocotb.test()
+# async def testDivuEtAl(dut):
+#     "Run back-to-back divu insns"
+#     asm(dut, '''
+#         li x16,16
+#         li x2,2
+#         divu x8,x16,x2
+#         addi x9,x8,1''')
+#     await preTestSetup(dut)
+
+#     # Since divu takes 2 cycles, li,li,divu takes 4 cycles to complete
+#     # and result is available in the 5th cycle.
+#     await ClockCycles(dut.clock_proc, 5)
+#     assert dut.datapath.rf.regs[8].value == 8, f'failed at cycle {dut.datapath.cycles_current.value.integer}'
+#     await ClockCycles(dut.clock_proc, 1) # wait one more cycle for addi's result
+#     assert dut.datapath.rf.regs[9].value == 9, f'failed at cycle {dut.datapath.cycles_current.value.integer}'
 
 # @cocotb.test()
 # async def testEcall(dut):

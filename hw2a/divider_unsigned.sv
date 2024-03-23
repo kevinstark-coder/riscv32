@@ -57,7 +57,7 @@ module divu_1iter (
     reg [31:0] remainder,dividend,quotient;
     always@(*) 
     begin
-        remainder = (i_remainder << 1) | ((i_dividend >> 31) & 32'b00000000000000000000000000000001);
+        remainder = (i_remainder << 1) | ((i_dividend >> 31) & 32'b1);
         dividend = i_dividend;
         quotient = i_quotient;
         if(remainder < i_divisor) 

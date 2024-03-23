@@ -47,55 +47,12 @@ VL_INLINE_OPT void Vtop___024root___nba_sequent__TOP__0(Vtop___024root* vlSelf) 
     // Init
     IData/*31:0*/ __Vdly__RiscvProcessor__DOT__datapath__DOT__num_insns_current;
     __Vdly__RiscvProcessor__DOT__datapath__DOT__num_insns_current = 0;
-    CData/*0:0*/ __Vdlyvset__RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs__v0;
-    __Vdlyvset__RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs__v0 = 0;
-    CData/*4:0*/ __Vdlyvdim0__RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs__v32;
-    __Vdlyvdim0__RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs__v32 = 0;
-    IData/*31:0*/ __Vdlyvval__RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs__v32;
-    __Vdlyvval__RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs__v32 = 0;
-    CData/*0:0*/ __Vdlyvset__RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs__v32;
-    __Vdlyvset__RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs__v32 = 0;
     // Body
     __Vdly__RiscvProcessor__DOT__datapath__DOT__num_insns_current 
         = vlSelf->RiscvProcessor__DOT__datapath__DOT__num_insns_current;
-    __Vdlyvset__RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs__v0 = 0U;
-    __Vdlyvset__RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs__v32 = 0U;
     if (vlSelf->rst) {
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 1U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 2U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 3U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 4U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 5U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 6U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 7U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 8U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 9U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 0xaU;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 0xbU;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 0xcU;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 0xdU;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 0xeU;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 0xfU;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 0x10U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 0x11U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 0x12U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 0x13U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 0x14U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 0x15U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 0x16U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 0x17U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 0x18U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 0x19U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 0x1aU;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 0x1bU;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 0x1cU;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 0x1dU;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 0x1eU;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 0x1fU;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 0x20U;
         __Vdly__RiscvProcessor__DOT__datapath__DOT__num_insns_current = 0U;
         vlSelf->RiscvProcessor__DOT__datapath__DOT__cycles_current = 0U;
-        __Vdlyvset__RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs__v0 = 1U;
         vlSelf->RiscvProcessor__DOT__datapath__DOT__pcCurrent = 0U;
     } else {
         if ((1U & (~ (IData)(vlSelf->rst)))) {
@@ -104,57 +61,11 @@ VL_INLINE_OPT void Vtop___024root___nba_sequent__TOP__0(Vtop___024root* vlSelf) 
         }
         vlSelf->RiscvProcessor__DOT__datapath__DOT__cycles_current 
             = ((IData)(1U) + vlSelf->RiscvProcessor__DOT__datapath__DOT__cycles_current);
-        if (((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__we) 
-             & (0U != (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_rd)))) {
-            __Vdlyvval__RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs__v32 
-                = vlSelf->RiscvProcessor__DOT__datapath__DOT__rd_data;
-            __Vdlyvset__RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs__v32 = 1U;
-            __Vdlyvdim0__RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs__v32 
-                = vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_rd;
-        }
         vlSelf->RiscvProcessor__DOT__datapath__DOT__pcCurrent 
             = vlSelf->RiscvProcessor__DOT__datapath__DOT__pcNext;
     }
     vlSelf->RiscvProcessor__DOT__datapath__DOT__num_insns_current 
         = __Vdly__RiscvProcessor__DOT__datapath__DOT__num_insns_current;
-    if (__Vdlyvset__RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs__v0) {
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[0U] = 0U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[1U] = 0U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[2U] = 0U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[3U] = 0U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[4U] = 0U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[5U] = 0U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[6U] = 0U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[7U] = 0U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[8U] = 0U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[9U] = 0U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[0xaU] = 0U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[0xbU] = 0U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[0xcU] = 0U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[0xdU] = 0U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[0xeU] = 0U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[0xfU] = 0U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[0x10U] = 0U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[0x11U] = 0U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[0x12U] = 0U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[0x13U] = 0U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[0x14U] = 0U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[0x15U] = 0U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[0x16U] = 0U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[0x17U] = 0U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[0x18U] = 0U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[0x19U] = 0U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[0x1aU] = 0U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[0x1bU] = 0U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[0x1cU] = 0U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[0x1dU] = 0U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[0x1eU] = 0U;
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[0x1fU] = 0U;
-    }
-    if (__Vdlyvset__RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs__v32) {
-        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[__Vdlyvdim0__RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs__v32] 
-            = __Vdlyvval__RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs__v32;
-    }
 }
 
 VL_INLINE_OPT void Vtop___024root___nba_sequent__TOP__1(Vtop___024root* vlSelf) {
@@ -286,6 +197,104 @@ VL_INLINE_OPT void Vtop___024root___nba_sequent__TOP__2(Vtop___024root* vlSelf) 
     if (false && vlSelf) {}  // Prevent unused
     Vtop__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop___024root___nba_sequent__TOP__2\n"); );
+    // Init
+    CData/*0:0*/ __Vdlyvset__RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs__v0;
+    __Vdlyvset__RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs__v0 = 0;
+    CData/*4:0*/ __Vdlyvdim0__RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs__v32;
+    __Vdlyvdim0__RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs__v32 = 0;
+    IData/*31:0*/ __Vdlyvval__RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs__v32;
+    __Vdlyvval__RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs__v32 = 0;
+    CData/*0:0*/ __Vdlyvset__RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs__v32;
+    __Vdlyvset__RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs__v32 = 0;
+    // Body
+    __Vdlyvset__RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs__v0 = 0U;
+    __Vdlyvset__RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs__v32 = 0U;
+    if (vlSelf->rst) {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 1U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 2U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 3U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 4U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 5U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 6U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 7U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 8U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 9U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 0xaU;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 0xbU;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 0xcU;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 0xdU;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 0xeU;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 0xfU;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 0x10U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 0x11U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 0x12U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 0x13U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 0x14U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 0x15U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 0x16U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 0x17U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 0x18U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 0x19U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 0x1aU;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 0x1bU;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 0x1cU;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 0x1dU;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 0x1eU;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 0x1fU;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__i = 0x20U;
+        __Vdlyvset__RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs__v0 = 1U;
+    } else if (((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__we) 
+                & (0U != (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_rd)))) {
+        __Vdlyvval__RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs__v32 
+            = vlSelf->RiscvProcessor__DOT__datapath__DOT__rd_data;
+        __Vdlyvset__RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs__v32 = 1U;
+        __Vdlyvdim0__RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs__v32 
+            = vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_rd;
+    }
+    if (__Vdlyvset__RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs__v0) {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[0U] = 0U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[1U] = 0U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[2U] = 0U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[3U] = 0U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[4U] = 0U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[5U] = 0U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[6U] = 0U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[7U] = 0U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[8U] = 0U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[9U] = 0U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[0xaU] = 0U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[0xbU] = 0U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[0xcU] = 0U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[0xdU] = 0U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[0xeU] = 0U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[0xfU] = 0U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[0x10U] = 0U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[0x11U] = 0U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[0x12U] = 0U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[0x13U] = 0U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[0x14U] = 0U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[0x15U] = 0U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[0x16U] = 0U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[0x17U] = 0U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[0x18U] = 0U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[0x19U] = 0U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[0x1aU] = 0U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[0x1bU] = 0U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[0x1cU] = 0U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[0x1dU] = 0U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[0x1eU] = 0U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[0x1fU] = 0U;
+    }
+    if (__Vdlyvset__RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs__v32) {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs[__Vdlyvdim0__RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs__v32] 
+            = __Vdlyvval__RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs__v32;
+    }
+}
+
+VL_INLINE_OPT void Vtop___024root___nba_sequent__TOP__3(Vtop___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    Vtop__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop___024root___nba_sequent__TOP__3\n"); );
     // Init
     CData/*0:0*/ RiscvProcessor__DOT__datapath__DOT____VdfgTmp_h9fd4f7e8__0;
     RiscvProcessor__DOT__datapath__DOT____VdfgTmp_h9fd4f7e8__0 = 0;
@@ -1432,10 +1441,10 @@ VL_INLINE_OPT void Vtop___024root___nba_sequent__TOP__2(Vtop___024root* vlSelf) 
         = vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__cin;
 }
 
-VL_INLINE_OPT void Vtop___024root___nba_sequent__TOP__3(Vtop___024root* vlSelf) {
+VL_INLINE_OPT void Vtop___024root___nba_sequent__TOP__4(Vtop___024root* vlSelf) {
     if (false && vlSelf) {}  // Prevent unused
     Vtop__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop___024root___nba_sequent__TOP__3\n"); );
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop___024root___nba_sequent__TOP__4\n"); );
     // Body
     vlSelf->RiscvProcessor__DOT__datapath__DOT__pc_to_imem 
         = vlSelf->RiscvProcessor__DOT__datapath__DOT__pcCurrent;
@@ -1444,10 +1453,2065 @@ VL_INLINE_OPT void Vtop___024root___nba_sequent__TOP__3(Vtop___024root* vlSelf) 
     vlSelf->RiscvProcessor__DOT__pc_to_imem = vlSelf->RiscvProcessor__DOT__datapath__DOT__pc_to_imem;
 }
 
-VL_INLINE_OPT void Vtop___024root___nba_comb__TOP__1(Vtop___024root* vlSelf) {
+VL_INLINE_OPT void Vtop___024root___nba_comb__TOP__0(Vtop___024root* vlSelf) {
     if (false && vlSelf) {}  // Prevent unused
     Vtop__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop___024root___nba_comb__TOP__1\n"); );
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop___024root___nba_comb__TOP__0\n"); );
+    // Init
+    IData/*30:0*/ RiscvProcessor__DOT__datapath__DOT__cla__DOT____VdfgTmp_hb04ad8a1__0;
+    RiscvProcessor__DOT__datapath__DOT__cla__DOT____VdfgTmp_hb04ad8a1__0 = 0;
+    CData/*0:0*/ RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a3__DOT____VdfgTmp_h5c66182c__0;
+    RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a3__DOT____VdfgTmp_h5c66182c__0 = 0;
+    CData/*0:0*/ RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a7__DOT____VdfgTmp_h5c66182c__0;
+    RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a7__DOT____VdfgTmp_h5c66182c__0 = 0;
+    CData/*0:0*/ RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a3__DOT____VdfgTmp_h5c66182c__0;
+    RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a3__DOT____VdfgTmp_h5c66182c__0 = 0;
+    CData/*0:0*/ RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a7__DOT____VdfgTmp_h5c66182c__0;
+    RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a7__DOT____VdfgTmp_h5c66182c__0 = 0;
+    CData/*0:0*/ RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a3__DOT____VdfgTmp_h5c66182c__0;
+    RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a3__DOT____VdfgTmp_h5c66182c__0 = 0;
+    CData/*0:0*/ RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a7__DOT____VdfgTmp_h5c66182c__0;
+    RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a7__DOT____VdfgTmp_h5c66182c__0 = 0;
+    CData/*0:0*/ RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a3__DOT____VdfgTmp_h5c66182c__0;
+    RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a3__DOT____VdfgTmp_h5c66182c__0 = 0;
+    CData/*0:0*/ RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a7__DOT____VdfgTmp_h5c66182c__0;
+    RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a7__DOT____VdfgTmp_h5c66182c__0 = 0;
+    // Body
+    if (vlSelf->rst) {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__rs2_data = 0U;
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__rs1_data = 0U;
+    } else {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__rs2_data 
+            = vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs
+            [vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_rs2];
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__rs1_data 
+            = vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__regs
+            [vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_rs1];
+    }
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__rs2_data 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__rs2_data;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__rs1_data 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__rf__DOT__rs1_data;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__store_data_to_dmem = 0U;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla_b = 0U;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor = 0U;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__addr_to_dmem = 0U;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla_a = 0U;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div_dividend = 0U;
+    if ((1U & (~ ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_opcode) 
+                  >> 6U)))) {
+        if ((0x20U & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_opcode))) {
+            if ((1U & (~ ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_opcode) 
+                          >> 4U)))) {
+                if ((1U & (~ ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_opcode) 
+                              >> 3U)))) {
+                    if ((1U & (~ ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_opcode) 
+                                  >> 2U)))) {
+                        if ((2U & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_opcode))) {
+                            if ((1U & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_opcode))) {
+                                if (vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_sb) {
+                                    vlSelf->RiscvProcessor__DOT__datapath__DOT__store_data_to_dmem 
+                                        = ((0xffffff00U 
+                                            & vlSelf->RiscvProcessor__DOT__datapath__DOT__store_data_to_dmem) 
+                                           | (0xffU 
+                                              & vlSelf->RiscvProcessor__DOT__datapath__DOT__rs2_data));
+                                    vlSelf->RiscvProcessor__DOT__datapath__DOT__addr_to_dmem 
+                                        = (vlSelf->RiscvProcessor__DOT__datapath__DOT__rs1_data 
+                                           + vlSelf->RiscvProcessor__DOT__datapath__DOT__imm_i_sext);
+                                }
+                                if (vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_sh) {
+                                    vlSelf->RiscvProcessor__DOT__datapath__DOT__store_data_to_dmem 
+                                        = ((0xffff0000U 
+                                            & vlSelf->RiscvProcessor__DOT__datapath__DOT__store_data_to_dmem) 
+                                           | (0xffffU 
+                                              & vlSelf->RiscvProcessor__DOT__datapath__DOT__rs2_data));
+                                    vlSelf->RiscvProcessor__DOT__datapath__DOT__addr_to_dmem 
+                                        = (vlSelf->RiscvProcessor__DOT__datapath__DOT__rs1_data 
+                                           + vlSelf->RiscvProcessor__DOT__datapath__DOT__imm_i_sext);
+                                }
+                                if (vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_sw) {
+                                    vlSelf->RiscvProcessor__DOT__datapath__DOT__store_data_to_dmem 
+                                        = vlSelf->RiscvProcessor__DOT__datapath__DOT__rs2_data;
+                                    vlSelf->RiscvProcessor__DOT__datapath__DOT__addr_to_dmem 
+                                        = (vlSelf->RiscvProcessor__DOT__datapath__DOT__rs1_data 
+                                           + vlSelf->RiscvProcessor__DOT__datapath__DOT__imm_i_sext);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            if ((0x10U & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_opcode))) {
+                if ((1U & (~ ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_opcode) 
+                              >> 3U)))) {
+                    if ((1U & (~ ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_opcode) 
+                                  >> 2U)))) {
+                        if ((2U & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_opcode))) {
+                            if ((1U & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_opcode))) {
+                                if (vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_add) {
+                                    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla_b 
+                                        = vlSelf->RiscvProcessor__DOT__datapath__DOT__rs2_data;
+                                    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla_a 
+                                        = vlSelf->RiscvProcessor__DOT__datapath__DOT__rs1_data;
+                                } else if (vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_sub) {
+                                    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla_b 
+                                        = ((IData)(1U) 
+                                           + (~ vlSelf->RiscvProcessor__DOT__datapath__DOT__rs2_data));
+                                    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla_a 
+                                        = vlSelf->RiscvProcessor__DOT__datapath__DOT__rs1_data;
+                                }
+                                if ((1U & (~ (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_add)))) {
+                                    if ((1U & (~ (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_sub)))) {
+                                        if ((1U & (~ (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_sll)))) {
+                                            if ((1U 
+                                                 & (~ (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_slt)))) {
+                                                if (
+                                                    (1U 
+                                                     & (~ (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_sltu)))) {
+                                                    if (
+                                                        (1U 
+                                                         & (~ (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_xor)))) {
+                                                        if (
+                                                            (1U 
+                                                             & (~ (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_srl)))) {
+                                                            if (
+                                                                (1U 
+                                                                 & (~ (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_sra)))) {
+                                                                if (
+                                                                    (1U 
+                                                                     & (~ (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_or)))) {
+                                                                    if (
+                                                                        (1U 
+                                                                         & (~ (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_and)))) {
+                                                                        if (
+                                                                            (1U 
+                                                                             & (~ (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_mul)))) {
+                                                                            if (
+                                                                                (1U 
+                                                                                & (~ (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_mulh)))) {
+                                                                                if (
+                                                                                (1U 
+                                                                                & (~ (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_mulhsu)))) {
+                                                                                if (
+                                                                                (1U 
+                                                                                & (~ (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_mulhu)))) {
+                                                                                if (vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_div) {
+                                                                                vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor 
+                                                                                = vlSelf->RiscvProcessor__DOT__datapath__DOT__rs2_data;
+                                                                                vlSelf->RiscvProcessor__DOT__datapath__DOT__div_dividend 
+                                                                                = vlSelf->RiscvProcessor__DOT__datapath__DOT__rs1_data;
+                                                                                } else if (vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_divu) {
+                                                                                vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor 
+                                                                                = vlSelf->RiscvProcessor__DOT__datapath__DOT__rs2_data;
+                                                                                vlSelf->RiscvProcessor__DOT__datapath__DOT__div_dividend 
+                                                                                = vlSelf->RiscvProcessor__DOT__datapath__DOT__rs1_data;
+                                                                                } else if (vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_rem) {
+                                                                                vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor 
+                                                                                = vlSelf->RiscvProcessor__DOT__datapath__DOT__rs2_data;
+                                                                                vlSelf->RiscvProcessor__DOT__datapath__DOT__div_dividend 
+                                                                                = vlSelf->RiscvProcessor__DOT__datapath__DOT__rs1_data;
+                                                                                } else if (vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_remu) {
+                                                                                vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor 
+                                                                                = vlSelf->RiscvProcessor__DOT__datapath__DOT__rs2_data;
+                                                                                vlSelf->RiscvProcessor__DOT__datapath__DOT__div_dividend 
+                                                                                = vlSelf->RiscvProcessor__DOT__datapath__DOT__rs1_data;
+                                                                                }
+                                                                                }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        } else {
+            if ((0x10U & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_opcode))) {
+                if ((1U & (~ ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_opcode) 
+                              >> 3U)))) {
+                    if ((1U & (~ ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_opcode) 
+                                  >> 2U)))) {
+                        if ((2U & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_opcode))) {
+                            if ((1U & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_opcode))) {
+                                if (vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_addi) {
+                                    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla_b 
+                                        = vlSelf->RiscvProcessor__DOT__datapath__DOT__imm_i_sext;
+                                    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla_a 
+                                        = vlSelf->RiscvProcessor__DOT__datapath__DOT__rs1_data;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            if ((1U & (~ ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_opcode) 
+                          >> 4U)))) {
+                if ((1U & (~ ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_opcode) 
+                              >> 3U)))) {
+                    if ((1U & (~ ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_opcode) 
+                                  >> 2U)))) {
+                        if ((2U & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_opcode))) {
+                            if ((1U & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_opcode))) {
+                                if (vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_lb) {
+                                    vlSelf->RiscvProcessor__DOT__datapath__DOT__addr_to_dmem 
+                                        = (vlSelf->RiscvProcessor__DOT__datapath__DOT__rs1_data 
+                                           + vlSelf->RiscvProcessor__DOT__datapath__DOT__imm_i_sext);
+                                } else if (vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_lh) {
+                                    vlSelf->RiscvProcessor__DOT__datapath__DOT__addr_to_dmem 
+                                        = (vlSelf->RiscvProcessor__DOT__datapath__DOT__rs1_data 
+                                           + vlSelf->RiscvProcessor__DOT__datapath__DOT__imm_i_sext);
+                                } else if (vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_lw) {
+                                    vlSelf->RiscvProcessor__DOT__datapath__DOT__addr_to_dmem 
+                                        = (vlSelf->RiscvProcessor__DOT__datapath__DOT__rs1_data 
+                                           + vlSelf->RiscvProcessor__DOT__datapath__DOT__imm_i_sext);
+                                } else if (vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_lbu) {
+                                    vlSelf->RiscvProcessor__DOT__datapath__DOT__addr_to_dmem 
+                                        = (vlSelf->RiscvProcessor__DOT__datapath__DOT__rs1_data 
+                                           + vlSelf->RiscvProcessor__DOT__datapath__DOT__imm_i_sext);
+                                } else if (vlSelf->RiscvProcessor__DOT__datapath__DOT__insn_lhu) {
+                                    vlSelf->RiscvProcessor__DOT__datapath__DOT__addr_to_dmem 
+                                        = (vlSelf->RiscvProcessor__DOT__datapath__DOT__rs1_data 
+                                           + vlSelf->RiscvProcessor__DOT__datapath__DOT__imm_i_sext);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    vlSelf->RiscvProcessor__DOT__mem_data_to_write 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__store_data_to_dmem;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__b 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__cla_b;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__i_divisor 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor;
+    vlSelf->RiscvProcessor__DOT__mem_data_addr = vlSelf->RiscvProcessor__DOT__datapath__DOT__addr_to_dmem;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__a 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__cla_a;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+        = (vlSelf->RiscvProcessor__DOT__datapath__DOT__cla_a 
+           & vlSelf->RiscvProcessor__DOT__datapath__DOT__cla_b);
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin 
+        = (vlSelf->RiscvProcessor__DOT__datapath__DOT__cla_a 
+           | vlSelf->RiscvProcessor__DOT__datapath__DOT__cla_b);
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__i_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div_dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__u_div0__DOT__dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div_dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__u_div0__DOT__dividend 
+        = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__u_div0__DOT__dividend, 1U);
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__u_div0__DOT__remainder 
+        = (1U & VL_SHIFTR_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div_dividend, 0x1fU));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__u_div0__DOT__quotient = 0U;
+    if ((vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__u_div0__DOT__remainder 
+         < vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor)) {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__u_div0__DOT__quotient 
+            = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__u_div0__DOT__quotient, 1U);
+    } else {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__u_div0__DOT__quotient 
+            = (1U | VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__u_div0__DOT__quotient, 1U));
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__u_div0__DOT__remainder 
+            = (vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__u_div0__DOT__remainder 
+               - vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor);
+    }
+    vlSelf->RiscvProcessor__DOT__mem__DOT__store_data_to_dmem 
+        = vlSelf->RiscvProcessor__DOT__mem_data_to_write;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__u_div0__DOT__i_divisor 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__i_divisor;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__0__KET____DOT__u_div__DOT__i_divisor 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__i_divisor;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__1__KET____DOT__u_div__DOT__i_divisor 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__i_divisor;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__2__KET____DOT__u_div__DOT__i_divisor 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__i_divisor;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__3__KET____DOT__u_div__DOT__i_divisor 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__i_divisor;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__4__KET____DOT__u_div__DOT__i_divisor 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__i_divisor;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__5__KET____DOT__u_div__DOT__i_divisor 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__i_divisor;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__6__KET____DOT__u_div__DOT__i_divisor 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__i_divisor;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__7__KET____DOT__u_div__DOT__i_divisor 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__i_divisor;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__8__KET____DOT__u_div__DOT__i_divisor 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__i_divisor;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__9__KET____DOT__u_div__DOT__i_divisor 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__i_divisor;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__10__KET____DOT__u_div__DOT__i_divisor 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__i_divisor;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__11__KET____DOT__u_div__DOT__i_divisor 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__i_divisor;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__12__KET____DOT__u_div__DOT__i_divisor 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__i_divisor;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__13__KET____DOT__u_div__DOT__i_divisor 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__i_divisor;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__14__KET____DOT__u_div__DOT__i_divisor 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__i_divisor;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__15__KET____DOT__u_div__DOT__i_divisor 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__i_divisor;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__16__KET____DOT__u_div__DOT__i_divisor 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__i_divisor;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__17__KET____DOT__u_div__DOT__i_divisor 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__i_divisor;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__18__KET____DOT__u_div__DOT__i_divisor 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__i_divisor;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__19__KET____DOT__u_div__DOT__i_divisor 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__i_divisor;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__20__KET____DOT__u_div__DOT__i_divisor 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__i_divisor;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__21__KET____DOT__u_div__DOT__i_divisor 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__i_divisor;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__22__KET____DOT__u_div__DOT__i_divisor 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__i_divisor;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__23__KET____DOT__u_div__DOT__i_divisor 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__i_divisor;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__24__KET____DOT__u_div__DOT__i_divisor 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__i_divisor;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__25__KET____DOT__u_div__DOT__i_divisor 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__i_divisor;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__26__KET____DOT__u_div__DOT__i_divisor 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__i_divisor;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__27__KET____DOT__u_div__DOT__i_divisor 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__i_divisor;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__28__KET____DOT__u_div__DOT__i_divisor 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__i_divisor;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__29__KET____DOT__u_div__DOT__i_divisor 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__i_divisor;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__30__KET____DOT__u_div__DOT__i_divisor 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__i_divisor;
+    vlSelf->RiscvProcessor__DOT__mem__DOT__addr_to_dmem 
+        = vlSelf->RiscvProcessor__DOT__mem_data_addr;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__gin 
+        = (0xffU & (vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                    >> 0U));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a3__DOT__gin 
+        = (0xfU & (vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                   >> 0U));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a7__DOT__gin 
+        = (0xfU & (vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                   >> 4U));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__gin 
+        = (0xffU & (vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                    >> 8U));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a3__DOT__gin 
+        = (0xfU & (vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                   >> 8U));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a7__DOT__gin 
+        = (0xfU & (vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                   >> 0xcU));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__gin 
+        = (0xffU & (vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                    >> 0x10U));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a3__DOT__gin 
+        = (0xfU & (vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                   >> 0x10U));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a7__DOT__gin 
+        = (0xfU & (vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                   >> 0x14U));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__gin 
+        = (0xffU & (vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                    >> 0x18U));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a3__DOT__gin 
+        = (0xfU & (vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                   >> 0x18U));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a7__DOT__gin 
+        = (0xfU & (vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                   >> 0x1cU));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__pin 
+        = (0xffU & (vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin 
+                    >> 0U));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a3__DOT__pin 
+        = (0xfU & (vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin 
+                   >> 0U));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a7__DOT__pin 
+        = (0xfU & (vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin 
+                   >> 4U));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__pin 
+        = (0xffU & (vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin 
+                    >> 8U));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a3__DOT__pin 
+        = (0xfU & (vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin 
+                   >> 8U));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a7__DOT__pin 
+        = (0xfU & (vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin 
+                   >> 0xcU));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__pin 
+        = (0xffU & (vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin 
+                    >> 0x10U));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a3__DOT__pin 
+        = (0xfU & (vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin 
+                   >> 0x10U));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a7__DOT__pin 
+        = (0xfU & (vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin 
+                   >> 0x14U));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__pin 
+        = (0xffU & (vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin 
+                    >> 0x18U));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a3__DOT__pin 
+        = (0xfU & (vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin 
+                   >> 0x18U));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a7__DOT__pin 
+        = (0xfU & (vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin 
+                   >> 0x1cU));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a7__DOT__G32 
+        = (1U & ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                  >> 0x1fU) | ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin 
+                                >> 0x1fU) & (vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                                             >> 0x1eU))));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a7__DOT__P32 
+        = (IData)((0xc0000000U == (0xc0000000U & vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a7__DOT__G10 
+        = (1U & ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                  >> 0x1dU) | ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin 
+                                >> 0x1dU) & (vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                                             >> 0x1cU))));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a7__DOT__P10 
+        = (IData)((0x30000000U == (0x30000000U & vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a3__DOT__G32 
+        = (1U & ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                  >> 0x1bU) | ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin 
+                                >> 0x1bU) & (vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                                             >> 0x1aU))));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a3__DOT__P10 
+        = (IData)((0x3000000U == (0x3000000U & vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a3__DOT__G10 
+        = (1U & ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                  >> 0x19U) | ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin 
+                                >> 0x19U) & (vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                                             >> 0x18U))));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a7__DOT__G32 
+        = (1U & ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                  >> 0x17U) | ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin 
+                                >> 0x17U) & (vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                                             >> 0x16U))));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a3__DOT__P32 
+        = (IData)((0xc000000U == (0xc000000U & vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a7__DOT__G10 
+        = (1U & ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                  >> 0x15U) | ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin 
+                                >> 0x15U) & (vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                                             >> 0x14U))));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a3__DOT__G32 
+        = (1U & ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                  >> 0x13U) | ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin 
+                                >> 0x13U) & (vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                                             >> 0x12U))));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a3__DOT__P10 
+        = (IData)((0x30000U == (0x30000U & vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a3__DOT__G10 
+        = (1U & ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                  >> 0x11U) | ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin 
+                                >> 0x11U) & (vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                                             >> 0x10U))));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a7__DOT__G32 
+        = (1U & ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                  >> 0xfU) | ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin 
+                               >> 0xfU) & (vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                                           >> 0xeU))));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a7__DOT__G10 
+        = (1U & ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                  >> 0xdU) | ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin 
+                               >> 0xdU) & (vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                                           >> 0xcU))));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a7__DOT__P10 
+        = (IData)((0x300000U == (0x300000U & vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a3__DOT__G32 
+        = (1U & ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                  >> 0xbU) | ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin 
+                               >> 0xbU) & (vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                                           >> 0xaU))));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a3__DOT__P10 
+        = (IData)((0x300U == (0x300U & vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a3__DOT__G10 
+        = (1U & ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                  >> 9U) | ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin 
+                             >> 9U) & (vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                                       >> 8U))));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a7__DOT__G32 
+        = (1U & ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                  >> 7U) | ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin 
+                             >> 7U) & (vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                                       >> 6U))));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a3__DOT__P32 
+        = (IData)((0xc0000U == (0xc0000U & vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a7__DOT__P32 
+        = (IData)((0xc00000U == (0xc00000U & vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a7__DOT__G10 
+        = (1U & ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                  >> 5U) | ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin 
+                             >> 5U) & (vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                                       >> 4U))));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a3__DOT__G32 
+        = (1U & ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                  >> 3U) | ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin 
+                             >> 3U) & (vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                                       >> 2U))));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a3__DOT__P10 
+        = (IData)((3U == (3U & vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a3__DOT__G10 
+        = (1U & ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                  >> 1U) | ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin 
+                             >> 1U) & vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a7__DOT__P10 
+        = (IData)((0x3000U == (0x3000U & vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a3__DOT__P32 
+        = (IData)((0xc00U == (0xc00U & vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a7__DOT__P32 
+        = (IData)((0xc000U == (0xc000U & vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a7__DOT__P10 
+        = (IData)((0x30U == (0x30U & vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a3__DOT__P32 
+        = (IData)((0xcU == (0xcU & vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a7__DOT__P32 
+        = (IData)((0xc0U == (0xc0U & vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__u_div0__DOT__i_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__i_dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__0__KET____DOT__u_div__DOT__i_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__u_div0__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__u_div0__DOT__o_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__u_div0__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__dividend[0U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__u_div0__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__0__KET____DOT__u_div__DOT__dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__u_div0__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__0__KET____DOT__u_div__DOT__dividend 
+        = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__0__KET____DOT__u_div__DOT__dividend, 1U);
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__0__KET____DOT__u_div__DOT__i_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__u_div0__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__u_div0__DOT__o_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__u_div0__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__remainder[0U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__u_div0__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__0__KET____DOT__u_div__DOT__i_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__u_div0__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__u_div0__DOT__o_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__u_div0__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__quotient[0U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__u_div0__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__0__KET____DOT__u_div__DOT__remainder 
+        = (VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__u_div0__DOT__remainder, 1U) 
+           | (1U & VL_SHIFTR_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__u_div0__DOT__dividend, 0x1fU)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__0__KET____DOT__u_div__DOT__quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__u_div0__DOT__quotient;
+    if ((vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__0__KET____DOT__u_div__DOT__remainder 
+         < vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor)) {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__0__KET____DOT__u_div__DOT__quotient 
+            = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__0__KET____DOT__u_div__DOT__quotient, 1U);
+    } else {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__0__KET____DOT__u_div__DOT__quotient 
+            = (1U | VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__0__KET____DOT__u_div__DOT__quotient, 1U));
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__0__KET____DOT__u_div__DOT__remainder 
+            = (vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__0__KET____DOT__u_div__DOT__remainder 
+               - vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor);
+    }
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a7__DOT__gout 
+        = ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a7__DOT__G32) 
+           | ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a7__DOT__P32) 
+              & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a7__DOT__G10)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a7__DOT__pout 
+        = ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a7__DOT__P32) 
+           & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a7__DOT__P10));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a3__DOT__pout 
+        = ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a3__DOT__P32) 
+           & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a3__DOT__P10));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a3__DOT__gout 
+        = ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a3__DOT__G32) 
+           | ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a3__DOT__P32) 
+              & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a3__DOT__G10)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a3__DOT__pout 
+        = ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a3__DOT__P32) 
+           & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a3__DOT__P10));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a3__DOT__gout 
+        = ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a3__DOT__G32) 
+           | ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a3__DOT__P32) 
+              & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a3__DOT__G10)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a7__DOT__gout 
+        = ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a7__DOT__G32) 
+           | ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a7__DOT__P32) 
+              & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a7__DOT__G10)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a7__DOT__pout 
+        = ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a7__DOT__P32) 
+           & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a7__DOT__P10));
+    RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a3__DOT____VdfgTmp_h5c66182c__0 
+        = ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a3__DOT__G10) 
+           | ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a3__DOT__P10) 
+              & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla_cin)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a3__DOT__pout 
+        = ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a3__DOT__P32) 
+           & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a3__DOT__P10));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a3__DOT__gout 
+        = ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a3__DOT__G32) 
+           | ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a3__DOT__P32) 
+              & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a3__DOT__G10)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a7__DOT__gout 
+        = ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a7__DOT__G32) 
+           | ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a7__DOT__P32) 
+              & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a7__DOT__G10)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a7__DOT__pout 
+        = ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a7__DOT__P32) 
+           & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a7__DOT__P10));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a3__DOT__pout 
+        = ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a3__DOT__P32) 
+           & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a3__DOT__P10));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a3__DOT__gout 
+        = ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a3__DOT__G32) 
+           | ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a3__DOT__P32) 
+              & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a3__DOT__G10)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a7__DOT__gout 
+        = ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a7__DOT__G32) 
+           | ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a7__DOT__P32) 
+              & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a7__DOT__G10)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a7__DOT__pout 
+        = ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a7__DOT__P32) 
+           & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a7__DOT__P10));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__1__KET____DOT__u_div__DOT__i_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__0__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__0__KET____DOT__u_div__DOT__o_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__0__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__dividend[1U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__0__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__1__KET____DOT__u_div__DOT__dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__0__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__1__KET____DOT__u_div__DOT__dividend 
+        = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__1__KET____DOT__u_div__DOT__dividend, 1U);
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__1__KET____DOT__u_div__DOT__i_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__0__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__0__KET____DOT__u_div__DOT__o_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__0__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__remainder[1U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__0__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__1__KET____DOT__u_div__DOT__i_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__0__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__0__KET____DOT__u_div__DOT__o_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__0__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__quotient[1U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__0__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__1__KET____DOT__u_div__DOT__remainder 
+        = (VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__0__KET____DOT__u_div__DOT__remainder, 1U) 
+           | (1U & VL_SHIFTR_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__0__KET____DOT__u_div__DOT__dividend, 0x1fU)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__1__KET____DOT__u_div__DOT__quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__0__KET____DOT__u_div__DOT__quotient;
+    if ((vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__1__KET____DOT__u_div__DOT__remainder 
+         < vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor)) {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__1__KET____DOT__u_div__DOT__quotient 
+            = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__1__KET____DOT__u_div__DOT__quotient, 1U);
+    } else {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__1__KET____DOT__u_div__DOT__quotient 
+            = (1U | VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__1__KET____DOT__u_div__DOT__quotient, 1U));
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__1__KET____DOT__u_div__DOT__remainder 
+            = (vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__1__KET____DOT__u_div__DOT__remainder 
+               - vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor);
+    }
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__gout_7 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a7__DOT__gout;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__pout_7 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a7__DOT__pout;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__pout_3 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a3__DOT__pout;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__pout 
+        = ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a3__DOT__pout) 
+           & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a7__DOT__pout));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__gout_3 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a3__DOT__gout;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__gout 
+        = ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a7__DOT__gout) 
+           | ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a3__DOT__gout) 
+              & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a7__DOT__pout)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__pout_3 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a3__DOT__pout;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__gout_3 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a3__DOT__gout;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__gout_7 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a7__DOT__gout;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__pout_7 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a7__DOT__pout;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__pout 
+        = ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a3__DOT__pout) 
+           & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a7__DOT__pout));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__gout 
+        = ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a7__DOT__gout) 
+           | ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a3__DOT__gout) 
+              & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a7__DOT__pout)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a3__DOT__cout 
+        = ((4U & (vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                  | (vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin 
+                     & ((IData)(RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a3__DOT____VdfgTmp_h5c66182c__0) 
+                        << 2U)))) | (((IData)(RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a3__DOT____VdfgTmp_h5c66182c__0) 
+                                      << 1U) | (1U 
+                                                & (vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                                                   | (vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin 
+                                                      & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla_cin))))));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__pout_3 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a3__DOT__pout;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__gout_3 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a3__DOT__gout;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__gout_7 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a7__DOT__gout;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__pout_7 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a7__DOT__pout;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__pout 
+        = ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a3__DOT__pout) 
+           & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a7__DOT__pout));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__gout 
+        = ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a7__DOT__gout) 
+           | ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a3__DOT__gout) 
+              & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a7__DOT__pout)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__pout_3 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a3__DOT__pout;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__gout_3 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a3__DOT__gout;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__cin_1 
+        = ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a3__DOT__gout) 
+           | ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla_cin) 
+              & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a3__DOT__pout)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__gout_7 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a7__DOT__gout;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__pout_7 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a7__DOT__pout;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__pout 
+        = ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a3__DOT__pout) 
+           & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a7__DOT__pout));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__gout 
+        = ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a7__DOT__gout) 
+           | ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a3__DOT__gout) 
+              & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a7__DOT__pout)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__2__KET____DOT__u_div__DOT__i_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__1__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__1__KET____DOT__u_div__DOT__o_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__1__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__dividend[2U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__1__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__2__KET____DOT__u_div__DOT__dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__1__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__2__KET____DOT__u_div__DOT__dividend 
+        = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__2__KET____DOT__u_div__DOT__dividend, 1U);
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__2__KET____DOT__u_div__DOT__i_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__1__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__1__KET____DOT__u_div__DOT__o_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__1__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__remainder[2U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__1__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__2__KET____DOT__u_div__DOT__i_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__1__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__1__KET____DOT__u_div__DOT__o_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__1__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__quotient[2U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__1__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__2__KET____DOT__u_div__DOT__remainder 
+        = (VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__1__KET____DOT__u_div__DOT__remainder, 1U) 
+           | (1U & VL_SHIFTR_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__1__KET____DOT__u_div__DOT__dividend, 0x1fU)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__2__KET____DOT__u_div__DOT__quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__1__KET____DOT__u_div__DOT__quotient;
+    if ((vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__2__KET____DOT__u_div__DOT__remainder 
+         < vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor)) {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__2__KET____DOT__u_div__DOT__quotient 
+            = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__2__KET____DOT__u_div__DOT__quotient, 1U);
+    } else {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__2__KET____DOT__u_div__DOT__quotient 
+            = (1U | VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__2__KET____DOT__u_div__DOT__quotient, 1U));
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__2__KET____DOT__u_div__DOT__remainder 
+            = (vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__2__KET____DOT__u_div__DOT__remainder 
+               - vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor);
+    }
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pout4 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__pout;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gout4 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__gout;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pout3 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__pout;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gout3 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__gout;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pout2 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__pout;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gout2 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__gout;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a7__DOT__cin 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__cin_1;
+    RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a7__DOT____VdfgTmp_h5c66182c__0 
+        = ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a7__DOT__G10) 
+           | ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a7__DOT__P10) 
+              & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__cin_1)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pout1 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__pout;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gout1 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__gout;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__c_7 
+        = ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__gout) 
+           | ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla_cin) 
+              & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__pout)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__3__KET____DOT__u_div__DOT__i_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__2__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__2__KET____DOT__u_div__DOT__o_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__2__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__dividend[3U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__2__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__3__KET____DOT__u_div__DOT__dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__2__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__3__KET____DOT__u_div__DOT__dividend 
+        = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__3__KET____DOT__u_div__DOT__dividend, 1U);
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__3__KET____DOT__u_div__DOT__i_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__2__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__2__KET____DOT__u_div__DOT__o_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__2__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__remainder[3U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__2__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__3__KET____DOT__u_div__DOT__i_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__2__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__2__KET____DOT__u_div__DOT__o_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__2__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__quotient[3U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__2__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__3__KET____DOT__u_div__DOT__remainder 
+        = (VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__2__KET____DOT__u_div__DOT__remainder, 1U) 
+           | (1U & VL_SHIFTR_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__2__KET____DOT__u_div__DOT__dividend, 0x1fU)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__3__KET____DOT__u_div__DOT__quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__2__KET____DOT__u_div__DOT__quotient;
+    if ((vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__3__KET____DOT__u_div__DOT__remainder 
+         < vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor)) {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__3__KET____DOT__u_div__DOT__quotient 
+            = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__3__KET____DOT__u_div__DOT__quotient, 1U);
+    } else {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__3__KET____DOT__u_div__DOT__quotient 
+            = (1U | VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__3__KET____DOT__u_div__DOT__quotient, 1U));
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__3__KET____DOT__u_div__DOT__remainder 
+            = (vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__3__KET____DOT__u_div__DOT__remainder 
+               - vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor);
+    }
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a7__DOT__cout 
+        = ((4U & ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                   >> 4U) | ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin 
+                              >> 4U) & ((IData)(RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a7__DOT____VdfgTmp_h5c66182c__0) 
+                                        << 2U)))) | 
+           (((IData)(RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a7__DOT____VdfgTmp_h5c66182c__0) 
+             << 1U) | (1U & ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                              >> 4U) | ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin 
+                                         >> 4U) & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__cin_1))))));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__cin 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__c_7;
+    RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a3__DOT____VdfgTmp_h5c66182c__0 
+        = ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a3__DOT__G10) 
+           | ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a3__DOT__P10) 
+              & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__c_7)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__cin_1 
+        = ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a3__DOT__gout) 
+           | ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__c_7) 
+              & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a3__DOT__pout)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__c_15 
+        = ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__gout) 
+           | ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__pout) 
+              & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__c_7)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__4__KET____DOT__u_div__DOT__i_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__3__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__3__KET____DOT__u_div__DOT__o_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__3__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__dividend[4U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__3__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__4__KET____DOT__u_div__DOT__dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__3__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__4__KET____DOT__u_div__DOT__dividend 
+        = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__4__KET____DOT__u_div__DOT__dividend, 1U);
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__4__KET____DOT__u_div__DOT__i_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__3__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__3__KET____DOT__u_div__DOT__o_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__3__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__remainder[4U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__3__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__4__KET____DOT__u_div__DOT__i_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__3__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__3__KET____DOT__u_div__DOT__o_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__3__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__quotient[4U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__3__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__4__KET____DOT__u_div__DOT__remainder 
+        = (VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__3__KET____DOT__u_div__DOT__remainder, 1U) 
+           | (1U & VL_SHIFTR_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__3__KET____DOT__u_div__DOT__dividend, 0x1fU)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__4__KET____DOT__u_div__DOT__quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__3__KET____DOT__u_div__DOT__quotient;
+    if ((vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__4__KET____DOT__u_div__DOT__remainder 
+         < vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor)) {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__4__KET____DOT__u_div__DOT__quotient 
+            = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__4__KET____DOT__u_div__DOT__quotient, 1U);
+    } else {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__4__KET____DOT__u_div__DOT__quotient 
+            = (1U | VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__4__KET____DOT__u_div__DOT__quotient, 1U));
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__4__KET____DOT__u_div__DOT__remainder 
+            = (vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__4__KET____DOT__u_div__DOT__remainder 
+               - vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor);
+    }
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__cout 
+        = (((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a7__DOT__cout) 
+            << 4U) | (((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__cin_1) 
+                       << 3U) | (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__a3__DOT__cout)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a3__DOT__cin 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__cin;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a3__DOT__cout 
+        = ((4U & ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                   >> 8U) | ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin 
+                              >> 8U) & ((IData)(RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a3__DOT____VdfgTmp_h5c66182c__0) 
+                                        << 2U)))) | 
+           (((IData)(RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a3__DOT____VdfgTmp_h5c66182c__0) 
+             << 1U) | (1U & ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                              >> 8U) | ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin 
+                                         >> 8U) & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__c_7))))));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a7__DOT__cin 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__cin_1;
+    RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a7__DOT____VdfgTmp_h5c66182c__0 
+        = ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a7__DOT__G10) 
+           | ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a7__DOT__P10) 
+              & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__cin_1)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__cin 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__c_15;
+    RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a3__DOT____VdfgTmp_h5c66182c__0 
+        = ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a3__DOT__G10) 
+           | ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a3__DOT__P10) 
+              & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__c_15)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__cin_1 
+        = ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a3__DOT__gout) 
+           | ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__c_15) 
+              & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a3__DOT__pout)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__c_23 
+        = ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__gout) 
+           | ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__pout) 
+              & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__c_15)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__5__KET____DOT__u_div__DOT__i_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__4__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__4__KET____DOT__u_div__DOT__o_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__4__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__dividend[5U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__4__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__5__KET____DOT__u_div__DOT__dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__4__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__5__KET____DOT__u_div__DOT__dividend 
+        = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__5__KET____DOT__u_div__DOT__dividend, 1U);
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__5__KET____DOT__u_div__DOT__i_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__4__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__4__KET____DOT__u_div__DOT__o_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__4__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__remainder[5U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__4__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__5__KET____DOT__u_div__DOT__i_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__4__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__4__KET____DOT__u_div__DOT__o_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__4__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__quotient[5U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__4__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__5__KET____DOT__u_div__DOT__remainder 
+        = (VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__4__KET____DOT__u_div__DOT__remainder, 1U) 
+           | (1U & VL_SHIFTR_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__4__KET____DOT__u_div__DOT__dividend, 0x1fU)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__5__KET____DOT__u_div__DOT__quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__4__KET____DOT__u_div__DOT__quotient;
+    if ((vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__5__KET____DOT__u_div__DOT__remainder 
+         < vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor)) {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__5__KET____DOT__u_div__DOT__quotient 
+            = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__5__KET____DOT__u_div__DOT__quotient, 1U);
+    } else {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__5__KET____DOT__u_div__DOT__quotient 
+            = (1U | VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__5__KET____DOT__u_div__DOT__quotient, 1U));
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__5__KET____DOT__u_div__DOT__remainder 
+            = (vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__5__KET____DOT__u_div__DOT__remainder 
+               - vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor);
+    }
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a7__DOT__cout 
+        = ((4U & ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                   >> 0xcU) | ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin 
+                                >> 0xcU) & ((IData)(RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a7__DOT____VdfgTmp_h5c66182c__0) 
+                                            << 2U)))) 
+           | (((IData)(RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a7__DOT____VdfgTmp_h5c66182c__0) 
+               << 1U) | (1U & ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                                >> 0xcU) | ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin 
+                                             >> 0xcU) 
+                                            & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__cin_1))))));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a3__DOT__cin 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__cin;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a3__DOT__cout 
+        = ((4U & ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                   >> 0x10U) | ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin 
+                                 >> 0x10U) & ((IData)(RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a3__DOT____VdfgTmp_h5c66182c__0) 
+                                              << 2U)))) 
+           | (((IData)(RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a3__DOT____VdfgTmp_h5c66182c__0) 
+               << 1U) | (1U & ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                                >> 0x10U) | ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin 
+                                              >> 0x10U) 
+                                             & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__c_15))))));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a7__DOT__cin 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__cin_1;
+    RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a7__DOT____VdfgTmp_h5c66182c__0 
+        = ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a7__DOT__G10) 
+           | ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a7__DOT__P10) 
+              & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__cin_1)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__cin 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__c_23;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__c_31 
+        = ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__gout) 
+           | ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__pout) 
+              & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__c_23)));
+    RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a3__DOT____VdfgTmp_h5c66182c__0 
+        = ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a3__DOT__G10) 
+           | ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a3__DOT__P10) 
+              & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__c_23)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__cin_1 
+        = ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a3__DOT__gout) 
+           | ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__c_23) 
+              & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a3__DOT__pout)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__6__KET____DOT__u_div__DOT__i_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__5__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__5__KET____DOT__u_div__DOT__o_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__5__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__dividend[6U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__5__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__6__KET____DOT__u_div__DOT__dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__5__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__6__KET____DOT__u_div__DOT__dividend 
+        = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__6__KET____DOT__u_div__DOT__dividend, 1U);
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__6__KET____DOT__u_div__DOT__i_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__5__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__5__KET____DOT__u_div__DOT__o_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__5__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__remainder[6U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__5__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__6__KET____DOT__u_div__DOT__i_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__5__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__5__KET____DOT__u_div__DOT__o_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__5__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__quotient[6U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__5__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__6__KET____DOT__u_div__DOT__remainder 
+        = (VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__5__KET____DOT__u_div__DOT__remainder, 1U) 
+           | (1U & VL_SHIFTR_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__5__KET____DOT__u_div__DOT__dividend, 0x1fU)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__6__KET____DOT__u_div__DOT__quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__5__KET____DOT__u_div__DOT__quotient;
+    if ((vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__6__KET____DOT__u_div__DOT__remainder 
+         < vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor)) {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__6__KET____DOT__u_div__DOT__quotient 
+            = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__6__KET____DOT__u_div__DOT__quotient, 1U);
+    } else {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__6__KET____DOT__u_div__DOT__quotient 
+            = (1U | VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__6__KET____DOT__u_div__DOT__quotient, 1U));
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__6__KET____DOT__u_div__DOT__remainder 
+            = (vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__6__KET____DOT__u_div__DOT__remainder 
+               - vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor);
+    }
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__cout 
+        = (((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a7__DOT__cout) 
+            << 4U) | (((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__cin_1) 
+                       << 3U) | (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__a3__DOT__cout)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a7__DOT__cout 
+        = ((4U & ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                   >> 0x14U) | ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin 
+                                 >> 0x14U) & ((IData)(RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a7__DOT____VdfgTmp_h5c66182c__0) 
+                                              << 2U)))) 
+           | (((IData)(RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a7__DOT____VdfgTmp_h5c66182c__0) 
+               << 1U) | (1U & ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                                >> 0x14U) | ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin 
+                                              >> 0x14U) 
+                                             & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__cin_1))))));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a3__DOT__cin 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__cin;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a3__DOT__cout 
+        = ((4U & ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                   >> 0x18U) | ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin 
+                                 >> 0x18U) & ((IData)(RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a3__DOT____VdfgTmp_h5c66182c__0) 
+                                              << 2U)))) 
+           | (((IData)(RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a3__DOT____VdfgTmp_h5c66182c__0) 
+               << 1U) | (1U & ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                                >> 0x18U) | ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin 
+                                              >> 0x18U) 
+                                             & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__c_23))))));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a7__DOT__cin 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__cin_1;
+    RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a7__DOT____VdfgTmp_h5c66182c__0 
+        = ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a7__DOT__G10) 
+           | ((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a7__DOT__P10) 
+              & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__cin_1)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__7__KET____DOT__u_div__DOT__i_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__6__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__6__KET____DOT__u_div__DOT__o_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__6__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__dividend[7U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__6__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__7__KET____DOT__u_div__DOT__dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__6__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__7__KET____DOT__u_div__DOT__dividend 
+        = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__7__KET____DOT__u_div__DOT__dividend, 1U);
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__7__KET____DOT__u_div__DOT__i_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__6__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__6__KET____DOT__u_div__DOT__o_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__6__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__remainder[7U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__6__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__7__KET____DOT__u_div__DOT__i_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__6__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__6__KET____DOT__u_div__DOT__o_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__6__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__quotient[7U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__6__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__7__KET____DOT__u_div__DOT__remainder 
+        = (VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__6__KET____DOT__u_div__DOT__remainder, 1U) 
+           | (1U & VL_SHIFTR_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__6__KET____DOT__u_div__DOT__dividend, 0x1fU)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__7__KET____DOT__u_div__DOT__quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__6__KET____DOT__u_div__DOT__quotient;
+    if ((vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__7__KET____DOT__u_div__DOT__remainder 
+         < vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor)) {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__7__KET____DOT__u_div__DOT__quotient 
+            = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__7__KET____DOT__u_div__DOT__quotient, 1U);
+    } else {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__7__KET____DOT__u_div__DOT__quotient 
+            = (1U | VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__7__KET____DOT__u_div__DOT__quotient, 1U));
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__7__KET____DOT__u_div__DOT__remainder 
+            = (vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__7__KET____DOT__u_div__DOT__remainder 
+               - vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor);
+    }
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__cout 
+        = (((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a7__DOT__cout) 
+            << 4U) | (((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__cin_1) 
+                       << 3U) | (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__a3__DOT__cout)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a7__DOT__cout 
+        = ((4U & ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                   >> 0x1cU) | ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin 
+                                 >> 0x1cU) & ((IData)(RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a7__DOT____VdfgTmp_h5c66182c__0) 
+                                              << 2U)))) 
+           | (((IData)(RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a7__DOT____VdfgTmp_h5c66182c__0) 
+               << 1U) | (1U & ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__gin 
+                                >> 0x1cU) | ((vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__pin 
+                                              >> 0x1cU) 
+                                             & (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__cin_1))))));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__8__KET____DOT__u_div__DOT__i_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__7__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__7__KET____DOT__u_div__DOT__o_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__7__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__dividend[8U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__7__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__8__KET____DOT__u_div__DOT__dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__7__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__8__KET____DOT__u_div__DOT__dividend 
+        = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__8__KET____DOT__u_div__DOT__dividend, 1U);
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__8__KET____DOT__u_div__DOT__i_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__7__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__7__KET____DOT__u_div__DOT__o_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__7__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__remainder[8U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__7__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__8__KET____DOT__u_div__DOT__i_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__7__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__7__KET____DOT__u_div__DOT__o_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__7__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__quotient[8U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__7__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__8__KET____DOT__u_div__DOT__remainder 
+        = (VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__7__KET____DOT__u_div__DOT__remainder, 1U) 
+           | (1U & VL_SHIFTR_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__7__KET____DOT__u_div__DOT__dividend, 0x1fU)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__8__KET____DOT__u_div__DOT__quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__7__KET____DOT__u_div__DOT__quotient;
+    if ((vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__8__KET____DOT__u_div__DOT__remainder 
+         < vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor)) {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__8__KET____DOT__u_div__DOT__quotient 
+            = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__8__KET____DOT__u_div__DOT__quotient, 1U);
+    } else {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__8__KET____DOT__u_div__DOT__quotient 
+            = (1U | VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__8__KET____DOT__u_div__DOT__quotient, 1U));
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__8__KET____DOT__u_div__DOT__remainder 
+            = (vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__8__KET____DOT__u_div__DOT__remainder 
+               - vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor);
+    }
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__cout 
+        = (((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a7__DOT__cout) 
+            << 4U) | (((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__cin_1) 
+                       << 3U) | (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__a3__DOT__cout)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__9__KET____DOT__u_div__DOT__i_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__8__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__8__KET____DOT__u_div__DOT__o_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__8__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__dividend[9U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__8__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__9__KET____DOT__u_div__DOT__dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__8__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__9__KET____DOT__u_div__DOT__dividend 
+        = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__9__KET____DOT__u_div__DOT__dividend, 1U);
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__9__KET____DOT__u_div__DOT__i_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__8__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__8__KET____DOT__u_div__DOT__o_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__8__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__remainder[9U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__8__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__9__KET____DOT__u_div__DOT__i_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__8__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__8__KET____DOT__u_div__DOT__o_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__8__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__quotient[9U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__8__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__9__KET____DOT__u_div__DOT__remainder 
+        = (VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__8__KET____DOT__u_div__DOT__remainder, 1U) 
+           | (1U & VL_SHIFTR_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__8__KET____DOT__u_div__DOT__dividend, 0x1fU)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__9__KET____DOT__u_div__DOT__quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__8__KET____DOT__u_div__DOT__quotient;
+    if ((vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__9__KET____DOT__u_div__DOT__remainder 
+         < vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor)) {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__9__KET____DOT__u_div__DOT__quotient 
+            = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__9__KET____DOT__u_div__DOT__quotient, 1U);
+    } else {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__9__KET____DOT__u_div__DOT__quotient 
+            = (1U | VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__9__KET____DOT__u_div__DOT__quotient, 1U));
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__9__KET____DOT__u_div__DOT__remainder 
+            = (vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__9__KET____DOT__u_div__DOT__remainder 
+               - vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor);
+    }
+    RiscvProcessor__DOT__datapath__DOT__cla__DOT____VdfgTmp_hb04ad8a1__0 
+        = (((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_4__DOT__cout) 
+            << 0x18U) | (((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__c_23) 
+                          << 0x17U) | (((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_3__DOT__cout) 
+                                        << 0x10U) | 
+                                       (((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__c_15) 
+                                         << 0xfU) | 
+                                        (((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_2__DOT__cout) 
+                                          << 8U) | 
+                                         (((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__c_7) 
+                                           << 7U) | (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__m_1__DOT__cout)))))));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__10__KET____DOT__u_div__DOT__i_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__9__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__9__KET____DOT__u_div__DOT__o_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__9__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__dividend[0xaU] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__9__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__10__KET____DOT__u_div__DOT__dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__9__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__10__KET____DOT__u_div__DOT__dividend 
+        = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__10__KET____DOT__u_div__DOT__dividend, 1U);
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__10__KET____DOT__u_div__DOT__i_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__9__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__9__KET____DOT__u_div__DOT__o_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__9__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__remainder[0xaU] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__9__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__10__KET____DOT__u_div__DOT__i_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__9__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__9__KET____DOT__u_div__DOT__o_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__9__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__quotient[0xaU] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__9__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__10__KET____DOT__u_div__DOT__remainder 
+        = (VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__9__KET____DOT__u_div__DOT__remainder, 1U) 
+           | (1U & VL_SHIFTR_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__9__KET____DOT__u_div__DOT__dividend, 0x1fU)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__10__KET____DOT__u_div__DOT__quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__9__KET____DOT__u_div__DOT__quotient;
+    if ((vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__10__KET____DOT__u_div__DOT__remainder 
+         < vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor)) {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__10__KET____DOT__u_div__DOT__quotient 
+            = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__10__KET____DOT__u_div__DOT__quotient, 1U);
+    } else {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__10__KET____DOT__u_div__DOT__quotient 
+            = (1U | VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__10__KET____DOT__u_div__DOT__quotient, 1U));
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__10__KET____DOT__u_div__DOT__remainder 
+            = (vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__10__KET____DOT__u_div__DOT__remainder 
+               - vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor);
+    }
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__cout 
+        = (((IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__c_31) 
+            << 0x1fU) | RiscvProcessor__DOT__datapath__DOT__cla__DOT____VdfgTmp_hb04ad8a1__0);
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla_sum 
+        = (vlSelf->RiscvProcessor__DOT__datapath__DOT__cla_a 
+           ^ (vlSelf->RiscvProcessor__DOT__datapath__DOT__cla_b 
+              ^ ((RiscvProcessor__DOT__datapath__DOT__cla__DOT____VdfgTmp_hb04ad8a1__0 
+                  << 1U) | (IData)(vlSelf->RiscvProcessor__DOT__datapath__DOT__cla_cin))));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__11__KET____DOT__u_div__DOT__i_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__10__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__10__KET____DOT__u_div__DOT__o_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__10__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__dividend[0xbU] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__10__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__11__KET____DOT__u_div__DOT__dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__10__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__11__KET____DOT__u_div__DOT__dividend 
+        = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__11__KET____DOT__u_div__DOT__dividend, 1U);
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__11__KET____DOT__u_div__DOT__i_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__10__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__10__KET____DOT__u_div__DOT__o_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__10__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__remainder[0xbU] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__10__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__11__KET____DOT__u_div__DOT__i_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__10__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__10__KET____DOT__u_div__DOT__o_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__10__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__quotient[0xbU] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__10__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__11__KET____DOT__u_div__DOT__remainder 
+        = (VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__10__KET____DOT__u_div__DOT__remainder, 1U) 
+           | (1U & VL_SHIFTR_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__10__KET____DOT__u_div__DOT__dividend, 0x1fU)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__11__KET____DOT__u_div__DOT__quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__10__KET____DOT__u_div__DOT__quotient;
+    if ((vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__11__KET____DOT__u_div__DOT__remainder 
+         < vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor)) {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__11__KET____DOT__u_div__DOT__quotient 
+            = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__11__KET____DOT__u_div__DOT__quotient, 1U);
+    } else {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__11__KET____DOT__u_div__DOT__quotient 
+            = (1U | VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__11__KET____DOT__u_div__DOT__quotient, 1U));
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__11__KET____DOT__u_div__DOT__remainder 
+            = (vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__11__KET____DOT__u_div__DOT__remainder 
+               - vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor);
+    }
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__cla__DOT__sum 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__cla_sum;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__12__KET____DOT__u_div__DOT__i_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__11__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__11__KET____DOT__u_div__DOT__o_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__11__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__dividend[0xcU] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__11__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__12__KET____DOT__u_div__DOT__dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__11__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__12__KET____DOT__u_div__DOT__dividend 
+        = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__12__KET____DOT__u_div__DOT__dividend, 1U);
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__12__KET____DOT__u_div__DOT__i_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__11__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__11__KET____DOT__u_div__DOT__o_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__11__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__remainder[0xcU] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__11__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__12__KET____DOT__u_div__DOT__i_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__11__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__11__KET____DOT__u_div__DOT__o_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__11__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__quotient[0xcU] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__11__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__12__KET____DOT__u_div__DOT__remainder 
+        = (VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__11__KET____DOT__u_div__DOT__remainder, 1U) 
+           | (1U & VL_SHIFTR_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__11__KET____DOT__u_div__DOT__dividend, 0x1fU)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__12__KET____DOT__u_div__DOT__quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__11__KET____DOT__u_div__DOT__quotient;
+    if ((vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__12__KET____DOT__u_div__DOT__remainder 
+         < vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor)) {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__12__KET____DOT__u_div__DOT__quotient 
+            = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__12__KET____DOT__u_div__DOT__quotient, 1U);
+    } else {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__12__KET____DOT__u_div__DOT__quotient 
+            = (1U | VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__12__KET____DOT__u_div__DOT__quotient, 1U));
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__12__KET____DOT__u_div__DOT__remainder 
+            = (vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__12__KET____DOT__u_div__DOT__remainder 
+               - vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor);
+    }
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__13__KET____DOT__u_div__DOT__i_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__12__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__12__KET____DOT__u_div__DOT__o_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__12__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__dividend[0xdU] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__12__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__13__KET____DOT__u_div__DOT__dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__12__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__13__KET____DOT__u_div__DOT__dividend 
+        = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__13__KET____DOT__u_div__DOT__dividend, 1U);
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__13__KET____DOT__u_div__DOT__i_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__12__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__12__KET____DOT__u_div__DOT__o_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__12__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__remainder[0xdU] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__12__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__13__KET____DOT__u_div__DOT__i_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__12__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__12__KET____DOT__u_div__DOT__o_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__12__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__quotient[0xdU] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__12__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__13__KET____DOT__u_div__DOT__remainder 
+        = (VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__12__KET____DOT__u_div__DOT__remainder, 1U) 
+           | (1U & VL_SHIFTR_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__12__KET____DOT__u_div__DOT__dividend, 0x1fU)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__13__KET____DOT__u_div__DOT__quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__12__KET____DOT__u_div__DOT__quotient;
+    if ((vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__13__KET____DOT__u_div__DOT__remainder 
+         < vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor)) {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__13__KET____DOT__u_div__DOT__quotient 
+            = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__13__KET____DOT__u_div__DOT__quotient, 1U);
+    } else {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__13__KET____DOT__u_div__DOT__quotient 
+            = (1U | VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__13__KET____DOT__u_div__DOT__quotient, 1U));
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__13__KET____DOT__u_div__DOT__remainder 
+            = (vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__13__KET____DOT__u_div__DOT__remainder 
+               - vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor);
+    }
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__14__KET____DOT__u_div__DOT__i_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__13__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__13__KET____DOT__u_div__DOT__o_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__13__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__dividend[0xeU] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__13__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__14__KET____DOT__u_div__DOT__dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__13__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__14__KET____DOT__u_div__DOT__dividend 
+        = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__14__KET____DOT__u_div__DOT__dividend, 1U);
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__14__KET____DOT__u_div__DOT__i_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__13__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__13__KET____DOT__u_div__DOT__o_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__13__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__remainder[0xeU] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__13__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__14__KET____DOT__u_div__DOT__i_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__13__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__13__KET____DOT__u_div__DOT__o_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__13__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__quotient[0xeU] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__13__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__14__KET____DOT__u_div__DOT__remainder 
+        = (VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__13__KET____DOT__u_div__DOT__remainder, 1U) 
+           | (1U & VL_SHIFTR_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__13__KET____DOT__u_div__DOT__dividend, 0x1fU)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__14__KET____DOT__u_div__DOT__quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__13__KET____DOT__u_div__DOT__quotient;
+    if ((vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__14__KET____DOT__u_div__DOT__remainder 
+         < vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor)) {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__14__KET____DOT__u_div__DOT__quotient 
+            = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__14__KET____DOT__u_div__DOT__quotient, 1U);
+    } else {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__14__KET____DOT__u_div__DOT__quotient 
+            = (1U | VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__14__KET____DOT__u_div__DOT__quotient, 1U));
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__14__KET____DOT__u_div__DOT__remainder 
+            = (vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__14__KET____DOT__u_div__DOT__remainder 
+               - vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor);
+    }
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__15__KET____DOT__u_div__DOT__i_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__14__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__14__KET____DOT__u_div__DOT__o_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__14__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__dividend[0xfU] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__14__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__15__KET____DOT__u_div__DOT__dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__14__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__15__KET____DOT__u_div__DOT__dividend 
+        = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__15__KET____DOT__u_div__DOT__dividend, 1U);
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__15__KET____DOT__u_div__DOT__i_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__14__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__14__KET____DOT__u_div__DOT__o_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__14__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__remainder[0xfU] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__14__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__15__KET____DOT__u_div__DOT__i_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__14__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__14__KET____DOT__u_div__DOT__o_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__14__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__quotient[0xfU] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__14__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__15__KET____DOT__u_div__DOT__remainder 
+        = (VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__14__KET____DOT__u_div__DOT__remainder, 1U) 
+           | (1U & VL_SHIFTR_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__14__KET____DOT__u_div__DOT__dividend, 0x1fU)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__15__KET____DOT__u_div__DOT__quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__14__KET____DOT__u_div__DOT__quotient;
+    if ((vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__15__KET____DOT__u_div__DOT__remainder 
+         < vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor)) {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__15__KET____DOT__u_div__DOT__quotient 
+            = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__15__KET____DOT__u_div__DOT__quotient, 1U);
+    } else {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__15__KET____DOT__u_div__DOT__quotient 
+            = (1U | VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__15__KET____DOT__u_div__DOT__quotient, 1U));
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__15__KET____DOT__u_div__DOT__remainder 
+            = (vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__15__KET____DOT__u_div__DOT__remainder 
+               - vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor);
+    }
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__16__KET____DOT__u_div__DOT__i_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__15__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__15__KET____DOT__u_div__DOT__o_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__15__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__dividend[0x10U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__15__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__16__KET____DOT__u_div__DOT__dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__15__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__16__KET____DOT__u_div__DOT__dividend 
+        = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__16__KET____DOT__u_div__DOT__dividend, 1U);
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__16__KET____DOT__u_div__DOT__i_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__15__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__15__KET____DOT__u_div__DOT__o_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__15__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__remainder[0x10U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__15__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__16__KET____DOT__u_div__DOT__i_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__15__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__15__KET____DOT__u_div__DOT__o_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__15__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__quotient[0x10U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__15__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__16__KET____DOT__u_div__DOT__remainder 
+        = (VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__15__KET____DOT__u_div__DOT__remainder, 1U) 
+           | (1U & VL_SHIFTR_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__15__KET____DOT__u_div__DOT__dividend, 0x1fU)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__16__KET____DOT__u_div__DOT__quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__15__KET____DOT__u_div__DOT__quotient;
+    if ((vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__16__KET____DOT__u_div__DOT__remainder 
+         < vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor)) {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__16__KET____DOT__u_div__DOT__quotient 
+            = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__16__KET____DOT__u_div__DOT__quotient, 1U);
+    } else {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__16__KET____DOT__u_div__DOT__quotient 
+            = (1U | VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__16__KET____DOT__u_div__DOT__quotient, 1U));
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__16__KET____DOT__u_div__DOT__remainder 
+            = (vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__16__KET____DOT__u_div__DOT__remainder 
+               - vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor);
+    }
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__17__KET____DOT__u_div__DOT__i_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__16__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__16__KET____DOT__u_div__DOT__o_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__16__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__dividend[0x11U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__16__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__17__KET____DOT__u_div__DOT__dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__16__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__17__KET____DOT__u_div__DOT__dividend 
+        = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__17__KET____DOT__u_div__DOT__dividend, 1U);
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__17__KET____DOT__u_div__DOT__i_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__16__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__16__KET____DOT__u_div__DOT__o_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__16__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__remainder[0x11U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__16__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__17__KET____DOT__u_div__DOT__i_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__16__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__16__KET____DOT__u_div__DOT__o_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__16__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__quotient[0x11U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__16__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__17__KET____DOT__u_div__DOT__remainder 
+        = (VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__16__KET____DOT__u_div__DOT__remainder, 1U) 
+           | (1U & VL_SHIFTR_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__16__KET____DOT__u_div__DOT__dividend, 0x1fU)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__17__KET____DOT__u_div__DOT__quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__16__KET____DOT__u_div__DOT__quotient;
+    if ((vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__17__KET____DOT__u_div__DOT__remainder 
+         < vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor)) {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__17__KET____DOT__u_div__DOT__quotient 
+            = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__17__KET____DOT__u_div__DOT__quotient, 1U);
+    } else {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__17__KET____DOT__u_div__DOT__quotient 
+            = (1U | VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__17__KET____DOT__u_div__DOT__quotient, 1U));
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__17__KET____DOT__u_div__DOT__remainder 
+            = (vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__17__KET____DOT__u_div__DOT__remainder 
+               - vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor);
+    }
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__18__KET____DOT__u_div__DOT__i_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__17__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__17__KET____DOT__u_div__DOT__o_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__17__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__dividend[0x12U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__17__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__18__KET____DOT__u_div__DOT__dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__17__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__18__KET____DOT__u_div__DOT__dividend 
+        = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__18__KET____DOT__u_div__DOT__dividend, 1U);
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__18__KET____DOT__u_div__DOT__i_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__17__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__17__KET____DOT__u_div__DOT__o_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__17__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__remainder[0x12U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__17__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__18__KET____DOT__u_div__DOT__i_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__17__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__17__KET____DOT__u_div__DOT__o_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__17__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__quotient[0x12U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__17__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__18__KET____DOT__u_div__DOT__remainder 
+        = (VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__17__KET____DOT__u_div__DOT__remainder, 1U) 
+           | (1U & VL_SHIFTR_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__17__KET____DOT__u_div__DOT__dividend, 0x1fU)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__18__KET____DOT__u_div__DOT__quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__17__KET____DOT__u_div__DOT__quotient;
+    if ((vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__18__KET____DOT__u_div__DOT__remainder 
+         < vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor)) {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__18__KET____DOT__u_div__DOT__quotient 
+            = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__18__KET____DOT__u_div__DOT__quotient, 1U);
+    } else {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__18__KET____DOT__u_div__DOT__quotient 
+            = (1U | VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__18__KET____DOT__u_div__DOT__quotient, 1U));
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__18__KET____DOT__u_div__DOT__remainder 
+            = (vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__18__KET____DOT__u_div__DOT__remainder 
+               - vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor);
+    }
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__19__KET____DOT__u_div__DOT__i_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__18__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__18__KET____DOT__u_div__DOT__o_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__18__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__dividend[0x13U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__18__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__19__KET____DOT__u_div__DOT__dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__18__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__19__KET____DOT__u_div__DOT__dividend 
+        = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__19__KET____DOT__u_div__DOT__dividend, 1U);
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__19__KET____DOT__u_div__DOT__i_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__18__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__18__KET____DOT__u_div__DOT__o_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__18__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__remainder[0x13U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__18__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__19__KET____DOT__u_div__DOT__i_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__18__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__18__KET____DOT__u_div__DOT__o_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__18__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__quotient[0x13U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__18__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__19__KET____DOT__u_div__DOT__remainder 
+        = (VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__18__KET____DOT__u_div__DOT__remainder, 1U) 
+           | (1U & VL_SHIFTR_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__18__KET____DOT__u_div__DOT__dividend, 0x1fU)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__19__KET____DOT__u_div__DOT__quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__18__KET____DOT__u_div__DOT__quotient;
+    if ((vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__19__KET____DOT__u_div__DOT__remainder 
+         < vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor)) {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__19__KET____DOT__u_div__DOT__quotient 
+            = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__19__KET____DOT__u_div__DOT__quotient, 1U);
+    } else {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__19__KET____DOT__u_div__DOT__quotient 
+            = (1U | VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__19__KET____DOT__u_div__DOT__quotient, 1U));
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__19__KET____DOT__u_div__DOT__remainder 
+            = (vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__19__KET____DOT__u_div__DOT__remainder 
+               - vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor);
+    }
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__20__KET____DOT__u_div__DOT__i_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__19__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__19__KET____DOT__u_div__DOT__o_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__19__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__dividend[0x14U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__19__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__20__KET____DOT__u_div__DOT__dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__19__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__20__KET____DOT__u_div__DOT__dividend 
+        = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__20__KET____DOT__u_div__DOT__dividend, 1U);
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__20__KET____DOT__u_div__DOT__i_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__19__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__19__KET____DOT__u_div__DOT__o_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__19__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__remainder[0x14U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__19__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__20__KET____DOT__u_div__DOT__i_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__19__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__19__KET____DOT__u_div__DOT__o_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__19__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__quotient[0x14U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__19__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__20__KET____DOT__u_div__DOT__remainder 
+        = (VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__19__KET____DOT__u_div__DOT__remainder, 1U) 
+           | (1U & VL_SHIFTR_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__19__KET____DOT__u_div__DOT__dividend, 0x1fU)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__20__KET____DOT__u_div__DOT__quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__19__KET____DOT__u_div__DOT__quotient;
+    if ((vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__20__KET____DOT__u_div__DOT__remainder 
+         < vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor)) {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__20__KET____DOT__u_div__DOT__quotient 
+            = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__20__KET____DOT__u_div__DOT__quotient, 1U);
+    } else {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__20__KET____DOT__u_div__DOT__quotient 
+            = (1U | VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__20__KET____DOT__u_div__DOT__quotient, 1U));
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__20__KET____DOT__u_div__DOT__remainder 
+            = (vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__20__KET____DOT__u_div__DOT__remainder 
+               - vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor);
+    }
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__21__KET____DOT__u_div__DOT__i_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__20__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__20__KET____DOT__u_div__DOT__o_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__20__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__dividend[0x15U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__20__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__21__KET____DOT__u_div__DOT__dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__20__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__21__KET____DOT__u_div__DOT__dividend 
+        = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__21__KET____DOT__u_div__DOT__dividend, 1U);
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__21__KET____DOT__u_div__DOT__i_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__20__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__20__KET____DOT__u_div__DOT__o_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__20__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__remainder[0x15U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__20__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__21__KET____DOT__u_div__DOT__i_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__20__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__20__KET____DOT__u_div__DOT__o_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__20__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__quotient[0x15U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__20__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__21__KET____DOT__u_div__DOT__remainder 
+        = (VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__20__KET____DOT__u_div__DOT__remainder, 1U) 
+           | (1U & VL_SHIFTR_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__20__KET____DOT__u_div__DOT__dividend, 0x1fU)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__21__KET____DOT__u_div__DOT__quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__20__KET____DOT__u_div__DOT__quotient;
+    if ((vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__21__KET____DOT__u_div__DOT__remainder 
+         < vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor)) {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__21__KET____DOT__u_div__DOT__quotient 
+            = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__21__KET____DOT__u_div__DOT__quotient, 1U);
+    } else {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__21__KET____DOT__u_div__DOT__quotient 
+            = (1U | VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__21__KET____DOT__u_div__DOT__quotient, 1U));
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__21__KET____DOT__u_div__DOT__remainder 
+            = (vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__21__KET____DOT__u_div__DOT__remainder 
+               - vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor);
+    }
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__22__KET____DOT__u_div__DOT__i_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__21__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__21__KET____DOT__u_div__DOT__o_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__21__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__dividend[0x16U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__21__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__22__KET____DOT__u_div__DOT__dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__21__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__22__KET____DOT__u_div__DOT__dividend 
+        = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__22__KET____DOT__u_div__DOT__dividend, 1U);
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__22__KET____DOT__u_div__DOT__i_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__21__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__21__KET____DOT__u_div__DOT__o_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__21__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__remainder[0x16U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__21__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__22__KET____DOT__u_div__DOT__i_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__21__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__21__KET____DOT__u_div__DOT__o_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__21__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__quotient[0x16U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__21__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__22__KET____DOT__u_div__DOT__remainder 
+        = (VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__21__KET____DOT__u_div__DOT__remainder, 1U) 
+           | (1U & VL_SHIFTR_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__21__KET____DOT__u_div__DOT__dividend, 0x1fU)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__22__KET____DOT__u_div__DOT__quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__21__KET____DOT__u_div__DOT__quotient;
+    if ((vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__22__KET____DOT__u_div__DOT__remainder 
+         < vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor)) {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__22__KET____DOT__u_div__DOT__quotient 
+            = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__22__KET____DOT__u_div__DOT__quotient, 1U);
+    } else {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__22__KET____DOT__u_div__DOT__quotient 
+            = (1U | VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__22__KET____DOT__u_div__DOT__quotient, 1U));
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__22__KET____DOT__u_div__DOT__remainder 
+            = (vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__22__KET____DOT__u_div__DOT__remainder 
+               - vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor);
+    }
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__23__KET____DOT__u_div__DOT__i_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__22__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__22__KET____DOT__u_div__DOT__o_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__22__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__dividend[0x17U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__22__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__23__KET____DOT__u_div__DOT__dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__22__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__23__KET____DOT__u_div__DOT__dividend 
+        = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__23__KET____DOT__u_div__DOT__dividend, 1U);
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__23__KET____DOT__u_div__DOT__i_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__22__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__22__KET____DOT__u_div__DOT__o_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__22__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__remainder[0x17U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__22__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__23__KET____DOT__u_div__DOT__i_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__22__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__22__KET____DOT__u_div__DOT__o_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__22__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__quotient[0x17U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__22__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__23__KET____DOT__u_div__DOT__remainder 
+        = (VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__22__KET____DOT__u_div__DOT__remainder, 1U) 
+           | (1U & VL_SHIFTR_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__22__KET____DOT__u_div__DOT__dividend, 0x1fU)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__23__KET____DOT__u_div__DOT__quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__22__KET____DOT__u_div__DOT__quotient;
+    if ((vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__23__KET____DOT__u_div__DOT__remainder 
+         < vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor)) {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__23__KET____DOT__u_div__DOT__quotient 
+            = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__23__KET____DOT__u_div__DOT__quotient, 1U);
+    } else {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__23__KET____DOT__u_div__DOT__quotient 
+            = (1U | VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__23__KET____DOT__u_div__DOT__quotient, 1U));
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__23__KET____DOT__u_div__DOT__remainder 
+            = (vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__23__KET____DOT__u_div__DOT__remainder 
+               - vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor);
+    }
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__24__KET____DOT__u_div__DOT__i_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__23__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__23__KET____DOT__u_div__DOT__o_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__23__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__dividend[0x18U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__23__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__24__KET____DOT__u_div__DOT__dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__23__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__24__KET____DOT__u_div__DOT__dividend 
+        = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__24__KET____DOT__u_div__DOT__dividend, 1U);
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__24__KET____DOT__u_div__DOT__i_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__23__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__23__KET____DOT__u_div__DOT__o_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__23__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__remainder[0x18U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__23__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__24__KET____DOT__u_div__DOT__i_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__23__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__23__KET____DOT__u_div__DOT__o_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__23__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__quotient[0x18U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__23__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__24__KET____DOT__u_div__DOT__remainder 
+        = (VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__23__KET____DOT__u_div__DOT__remainder, 1U) 
+           | (1U & VL_SHIFTR_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__23__KET____DOT__u_div__DOT__dividend, 0x1fU)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__24__KET____DOT__u_div__DOT__quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__23__KET____DOT__u_div__DOT__quotient;
+    if ((vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__24__KET____DOT__u_div__DOT__remainder 
+         < vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor)) {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__24__KET____DOT__u_div__DOT__quotient 
+            = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__24__KET____DOT__u_div__DOT__quotient, 1U);
+    } else {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__24__KET____DOT__u_div__DOT__quotient 
+            = (1U | VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__24__KET____DOT__u_div__DOT__quotient, 1U));
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__24__KET____DOT__u_div__DOT__remainder 
+            = (vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__24__KET____DOT__u_div__DOT__remainder 
+               - vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor);
+    }
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__25__KET____DOT__u_div__DOT__i_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__24__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__24__KET____DOT__u_div__DOT__o_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__24__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__dividend[0x19U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__24__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__25__KET____DOT__u_div__DOT__dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__24__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__25__KET____DOT__u_div__DOT__dividend 
+        = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__25__KET____DOT__u_div__DOT__dividend, 1U);
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__25__KET____DOT__u_div__DOT__i_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__24__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__24__KET____DOT__u_div__DOT__o_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__24__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__remainder[0x19U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__24__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__25__KET____DOT__u_div__DOT__i_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__24__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__24__KET____DOT__u_div__DOT__o_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__24__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__quotient[0x19U] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__24__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__25__KET____DOT__u_div__DOT__remainder 
+        = (VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__24__KET____DOT__u_div__DOT__remainder, 1U) 
+           | (1U & VL_SHIFTR_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__24__KET____DOT__u_div__DOT__dividend, 0x1fU)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__25__KET____DOT__u_div__DOT__quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__24__KET____DOT__u_div__DOT__quotient;
+    if ((vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__25__KET____DOT__u_div__DOT__remainder 
+         < vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor)) {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__25__KET____DOT__u_div__DOT__quotient 
+            = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__25__KET____DOT__u_div__DOT__quotient, 1U);
+    } else {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__25__KET____DOT__u_div__DOT__quotient 
+            = (1U | VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__25__KET____DOT__u_div__DOT__quotient, 1U));
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__25__KET____DOT__u_div__DOT__remainder 
+            = (vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__25__KET____DOT__u_div__DOT__remainder 
+               - vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor);
+    }
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__26__KET____DOT__u_div__DOT__i_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__25__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__25__KET____DOT__u_div__DOT__o_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__25__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__dividend[0x1aU] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__25__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__26__KET____DOT__u_div__DOT__dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__25__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__26__KET____DOT__u_div__DOT__dividend 
+        = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__26__KET____DOT__u_div__DOT__dividend, 1U);
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__26__KET____DOT__u_div__DOT__i_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__25__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__25__KET____DOT__u_div__DOT__o_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__25__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__remainder[0x1aU] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__25__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__26__KET____DOT__u_div__DOT__i_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__25__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__25__KET____DOT__u_div__DOT__o_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__25__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__quotient[0x1aU] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__25__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__26__KET____DOT__u_div__DOT__remainder 
+        = (VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__25__KET____DOT__u_div__DOT__remainder, 1U) 
+           | (1U & VL_SHIFTR_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__25__KET____DOT__u_div__DOT__dividend, 0x1fU)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__26__KET____DOT__u_div__DOT__quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__25__KET____DOT__u_div__DOT__quotient;
+    if ((vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__26__KET____DOT__u_div__DOT__remainder 
+         < vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor)) {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__26__KET____DOT__u_div__DOT__quotient 
+            = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__26__KET____DOT__u_div__DOT__quotient, 1U);
+    } else {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__26__KET____DOT__u_div__DOT__quotient 
+            = (1U | VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__26__KET____DOT__u_div__DOT__quotient, 1U));
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__26__KET____DOT__u_div__DOT__remainder 
+            = (vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__26__KET____DOT__u_div__DOT__remainder 
+               - vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor);
+    }
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__27__KET____DOT__u_div__DOT__i_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__26__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__26__KET____DOT__u_div__DOT__o_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__26__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__dividend[0x1bU] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__26__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__27__KET____DOT__u_div__DOT__dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__26__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__27__KET____DOT__u_div__DOT__dividend 
+        = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__27__KET____DOT__u_div__DOT__dividend, 1U);
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__27__KET____DOT__u_div__DOT__i_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__26__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__26__KET____DOT__u_div__DOT__o_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__26__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__remainder[0x1bU] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__26__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__27__KET____DOT__u_div__DOT__i_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__26__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__26__KET____DOT__u_div__DOT__o_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__26__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__quotient[0x1bU] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__26__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__27__KET____DOT__u_div__DOT__remainder 
+        = (VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__26__KET____DOT__u_div__DOT__remainder, 1U) 
+           | (1U & VL_SHIFTR_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__26__KET____DOT__u_div__DOT__dividend, 0x1fU)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__27__KET____DOT__u_div__DOT__quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__26__KET____DOT__u_div__DOT__quotient;
+    if ((vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__27__KET____DOT__u_div__DOT__remainder 
+         < vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor)) {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__27__KET____DOT__u_div__DOT__quotient 
+            = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__27__KET____DOT__u_div__DOT__quotient, 1U);
+    } else {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__27__KET____DOT__u_div__DOT__quotient 
+            = (1U | VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__27__KET____DOT__u_div__DOT__quotient, 1U));
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__27__KET____DOT__u_div__DOT__remainder 
+            = (vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__27__KET____DOT__u_div__DOT__remainder 
+               - vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor);
+    }
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__28__KET____DOT__u_div__DOT__i_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__27__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__27__KET____DOT__u_div__DOT__o_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__27__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__dividend[0x1cU] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__27__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__28__KET____DOT__u_div__DOT__dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__27__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__28__KET____DOT__u_div__DOT__dividend 
+        = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__28__KET____DOT__u_div__DOT__dividend, 1U);
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__28__KET____DOT__u_div__DOT__i_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__27__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__27__KET____DOT__u_div__DOT__o_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__27__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__remainder[0x1cU] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__27__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__28__KET____DOT__u_div__DOT__i_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__27__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__27__KET____DOT__u_div__DOT__o_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__27__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__quotient[0x1cU] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__27__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__28__KET____DOT__u_div__DOT__remainder 
+        = (VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__27__KET____DOT__u_div__DOT__remainder, 1U) 
+           | (1U & VL_SHIFTR_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__27__KET____DOT__u_div__DOT__dividend, 0x1fU)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__28__KET____DOT__u_div__DOT__quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__27__KET____DOT__u_div__DOT__quotient;
+    if ((vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__28__KET____DOT__u_div__DOT__remainder 
+         < vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor)) {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__28__KET____DOT__u_div__DOT__quotient 
+            = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__28__KET____DOT__u_div__DOT__quotient, 1U);
+    } else {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__28__KET____DOT__u_div__DOT__quotient 
+            = (1U | VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__28__KET____DOT__u_div__DOT__quotient, 1U));
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__28__KET____DOT__u_div__DOT__remainder 
+            = (vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__28__KET____DOT__u_div__DOT__remainder 
+               - vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor);
+    }
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__29__KET____DOT__u_div__DOT__i_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__28__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__28__KET____DOT__u_div__DOT__o_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__28__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__dividend[0x1dU] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__28__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__29__KET____DOT__u_div__DOT__dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__28__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__29__KET____DOT__u_div__DOT__dividend 
+        = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__29__KET____DOT__u_div__DOT__dividend, 1U);
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__29__KET____DOT__u_div__DOT__i_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__28__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__28__KET____DOT__u_div__DOT__o_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__28__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__remainder[0x1dU] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__28__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__29__KET____DOT__u_div__DOT__i_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__28__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__28__KET____DOT__u_div__DOT__o_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__28__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__quotient[0x1dU] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__28__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__29__KET____DOT__u_div__DOT__remainder 
+        = (VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__28__KET____DOT__u_div__DOT__remainder, 1U) 
+           | (1U & VL_SHIFTR_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__28__KET____DOT__u_div__DOT__dividend, 0x1fU)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__29__KET____DOT__u_div__DOT__quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__28__KET____DOT__u_div__DOT__quotient;
+    if ((vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__29__KET____DOT__u_div__DOT__remainder 
+         < vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor)) {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__29__KET____DOT__u_div__DOT__quotient 
+            = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__29__KET____DOT__u_div__DOT__quotient, 1U);
+    } else {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__29__KET____DOT__u_div__DOT__quotient 
+            = (1U | VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__29__KET____DOT__u_div__DOT__quotient, 1U));
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__29__KET____DOT__u_div__DOT__remainder 
+            = (vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__29__KET____DOT__u_div__DOT__remainder 
+               - vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor);
+    }
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__30__KET____DOT__u_div__DOT__i_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__29__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__29__KET____DOT__u_div__DOT__o_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__29__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__dividend[0x1eU] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__29__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__30__KET____DOT__u_div__DOT__dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__29__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__30__KET____DOT__u_div__DOT__dividend 
+        = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__30__KET____DOT__u_div__DOT__dividend, 1U);
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__30__KET____DOT__u_div__DOT__i_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__29__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__29__KET____DOT__u_div__DOT__o_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__29__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__remainder[0x1eU] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__29__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__30__KET____DOT__u_div__DOT__i_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__29__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__29__KET____DOT__u_div__DOT__o_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__29__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__quotient[0x1eU] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__29__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__30__KET____DOT__u_div__DOT__remainder 
+        = (VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__29__KET____DOT__u_div__DOT__remainder, 1U) 
+           | (1U & VL_SHIFTR_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__29__KET____DOT__u_div__DOT__dividend, 0x1fU)));
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__30__KET____DOT__u_div__DOT__quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__29__KET____DOT__u_div__DOT__quotient;
+    if ((vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__30__KET____DOT__u_div__DOT__remainder 
+         < vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor)) {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__30__KET____DOT__u_div__DOT__quotient 
+            = VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__30__KET____DOT__u_div__DOT__quotient, 1U);
+    } else {
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__30__KET____DOT__u_div__DOT__quotient 
+            = (1U | VL_SHIFTL_III(32,32,32, vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__30__KET____DOT__u_div__DOT__quotient, 1U));
+        vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__30__KET____DOT__u_div__DOT__remainder 
+            = (vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__30__KET____DOT__u_div__DOT__remainder 
+               - vlSelf->RiscvProcessor__DOT__datapath__DOT__div_divisor);
+    }
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__30__KET____DOT__u_div__DOT__o_dividend 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__30__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__dividend[0x1fU] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__30__KET____DOT__u_div__DOT__dividend;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__remainder[0x1fU] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__30__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__30__KET____DOT__u_div__DOT__remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__quotient[0x1fU] 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__30__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__30__KET____DOT__u_div__DOT__quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__o_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div_remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__30__KET____DOT__u_div__DOT__o_remainder 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div_remainder;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__o_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div_quotient;
+    vlSelf->RiscvProcessor__DOT__datapath__DOT__div__DOT__div__BRA__30__KET____DOT__u_div__DOT__o_quotient 
+        = vlSelf->RiscvProcessor__DOT__datapath__DOT__div_quotient;
+}
+
+VL_INLINE_OPT void Vtop___024root___nba_comb__TOP__2(Vtop___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    Vtop__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop___024root___nba_comb__TOP__2\n"); );
     // Body
     vlSelf->RiscvProcessor__DOT__datapath__DOT__rd_data = 0U;
     vlSelf->RiscvProcessor__DOT__datapath__DOT__mul = 0ULL;
@@ -1664,7 +3728,7 @@ VL_INLINE_OPT void Vtop___024root___nba_comb__TOP__1(Vtop___024root* vlSelf) {
         = vlSelf->RiscvProcessor__DOT__datapath__DOT__rd_data;
 }
 
-void Vtop___024root___nba_comb__TOP__0(Vtop___024root* vlSelf);
+void Vtop___024root___nba_comb__TOP__1(Vtop___024root* vlSelf);
 
 void Vtop___024root___eval_nba(Vtop___024root* vlSelf) {
     if (false && vlSelf) {}  // Prevent unused
@@ -1677,17 +3741,23 @@ void Vtop___024root___eval_nba(Vtop___024root* vlSelf) {
     if ((2ULL & vlSelf->__VnbaTriggered.word(0U))) {
         Vtop___024root___nba_sequent__TOP__1(vlSelf);
     }
-    if ((1ULL & vlSelf->__VnbaTriggered.word(0U))) {
+    if ((8ULL & vlSelf->__VnbaTriggered.word(0U))) {
         Vtop___024root___nba_sequent__TOP__2(vlSelf);
     }
-    if ((4ULL & vlSelf->__VnbaTriggered.word(0U))) {
+    if ((1ULL & vlSelf->__VnbaTriggered.word(0U))) {
         Vtop___024root___nba_sequent__TOP__3(vlSelf);
     }
-    if ((5ULL & vlSelf->__VnbaTriggered.word(0U))) {
+    if ((4ULL & vlSelf->__VnbaTriggered.word(0U))) {
+        Vtop___024root___nba_sequent__TOP__4(vlSelf);
+    }
+    if ((9ULL & vlSelf->__VnbaTriggered.word(0U))) {
         Vtop___024root___nba_comb__TOP__0(vlSelf);
     }
-    if ((7ULL & vlSelf->__VnbaTriggered.word(0U))) {
+    if ((0xdULL & vlSelf->__VnbaTriggered.word(0U))) {
         Vtop___024root___nba_comb__TOP__1(vlSelf);
+    }
+    if ((0xfULL & vlSelf->__VnbaTriggered.word(0U))) {
+        Vtop___024root___nba_comb__TOP__2(vlSelf);
     }
 }
 
@@ -1698,7 +3768,7 @@ bool Vtop___024root___eval_phase__act(Vtop___024root* vlSelf) {
     Vtop__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop___024root___eval_phase__act\n"); );
     // Init
-    VlTriggerVec<3> __VpreTriggered;
+    VlTriggerVec<4> __VpreTriggered;
     CData/*0:0*/ __VactExecute;
     // Body
     Vtop___024root___eval_triggers__act(vlSelf);

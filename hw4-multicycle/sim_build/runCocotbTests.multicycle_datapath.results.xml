@@ -1,6 +1,6 @@
 <testsuites name="results">
   <testsuite name="all" package="all">
     <property name="random_seed" value="12345" />
-    <testcase name="testDivuEtAl" classname="testbench" file="/home/penn/riscv32/hw4-multicycle/testbench.py" lineno="234" time="0.02595376968383789" sim_time_ns="32.001" ratio_time="1233.0000762828638" />
+    <testcase name="test2Divu" classname="testbench" file="/home/penn/riscv32/hw4-multicycle/testbench.py" lineno="218" time="0.04188251495361328" sim_time_ns="40.001" ratio_time="955.0763616822642" />
   </testsuite>
 </testsuites>
