@@ -223,8 +223,6 @@ Vtop__Syms::Vtop__Syms(VerilatedContext* contextp, const char* namep, Vtop* mode
     __Vscope_divider_unsigned_pipelined__genblk2__BRA__8__KET____d1.configure(this, name(), "divider_unsigned_pipelined.genblk2[8].d1", "d1", -9, VerilatedScope::SCOPE_MODULE);
     __Vscope_divider_unsigned_pipelined__genblk2__BRA__9__KET__.configure(this, name(), "divider_unsigned_pipelined.genblk2[9]", "genblk2[9]", -9, VerilatedScope::SCOPE_OTHER);
     __Vscope_divider_unsigned_pipelined__genblk2__BRA__9__KET____d1.configure(this, name(), "divider_unsigned_pipelined.genblk2[9].d1", "d1", -9, VerilatedScope::SCOPE_MODULE);
-    __Vscope_divider_unsigned_pipelined__unnamedblk1.configure(this, name(), "divider_unsigned_pipelined.unnamedblk1", "unnamedblk1", -9, VerilatedScope::SCOPE_OTHER);
-    __Vscope_divider_unsigned_pipelined__unnamedblk2.configure(this, name(), "divider_unsigned_pipelined.unnamedblk2", "unnamedblk2", -9, VerilatedScope::SCOPE_OTHER);
 
     // Set up scope hierarchy
     __Vhier.add(0, &__Vscope_divider_unsigned_pipelined);
@@ -269,6 +267,9 @@ Vtop__Syms::Vtop__Syms(VerilatedContext* contextp, const char* namep, Vtop* mode
         __Vscope_TOP.varInsert(__Vfinal,"o_quotient", &(TOP.o_quotient), false, VLVT_UINT32,VLVD_OUT|VLVF_PUB_RW,1 ,31,0);
         __Vscope_TOP.varInsert(__Vfinal,"o_remainder", &(TOP.o_remainder), false, VLVT_UINT32,VLVD_OUT|VLVF_PUB_RW,1 ,31,0);
         __Vscope_TOP.varInsert(__Vfinal,"rst", &(TOP.rst), false, VLVT_UINT8,VLVD_IN|VLVF_PUB_RW,0);
+        __Vscope_divider_unsigned_pipelined.varInsert(__Vfinal,"a", &(TOP.divider_unsigned_pipelined__DOT__a), false, VLVT_UINT32,VLVD_NODIR|VLVF_PUB_RW,1 ,31,0);
+        __Vscope_divider_unsigned_pipelined.varInsert(__Vfinal,"b", &(TOP.divider_unsigned_pipelined__DOT__b), false, VLVT_UINT32,VLVD_NODIR|VLVF_PUB_RW,1 ,31,0);
+        __Vscope_divider_unsigned_pipelined.varInsert(__Vfinal,"c", &(TOP.divider_unsigned_pipelined__DOT__c), false, VLVT_UINT32,VLVD_NODIR|VLVF_PUB_RW,1 ,31,0);
         __Vscope_divider_unsigned_pipelined.varInsert(__Vfinal,"clk", &(TOP.divider_unsigned_pipelined__DOT__clk), false, VLVT_UINT8,VLVD_NODIR|VLVF_PUB_RW,0);
         __Vscope_divider_unsigned_pipelined.varInsert(__Vfinal,"divided_1", &(TOP.divider_unsigned_pipelined__DOT__divided_1), false, VLVT_UINT32,VLVD_NODIR|VLVF_PUB_RW,2 ,31,0 ,16,0);
         __Vscope_divider_unsigned_pipelined.varInsert(__Vfinal,"divided_2", &(TOP.divider_unsigned_pipelined__DOT__divided_2), false, VLVT_UINT32,VLVD_NODIR|VLVF_PUB_RW,2 ,31,0 ,16,0);
@@ -571,7 +572,5 @@ Vtop__Syms::Vtop__Syms(VerilatedContext* contextp, const char* namep, Vtop* mode
         __Vscope_divider_unsigned_pipelined__genblk2__BRA__9__KET____d1.varInsert(__Vfinal,"o_remainder", &(TOP__divider_unsigned_pipelined__DOT__genblk2__BRA__9__KET____DOT__d1.o_remainder), false, VLVT_UINT32,VLVD_OUT|VLVF_PUB_RW,1 ,31,0);
         __Vscope_divider_unsigned_pipelined__genblk2__BRA__9__KET____d1.varInsert(__Vfinal,"temp_quotient", &(TOP__divider_unsigned_pipelined__DOT__genblk2__BRA__9__KET____DOT__d1.temp_quotient), false, VLVT_UINT32,VLVD_NODIR|VLVF_PUB_RW,1 ,31,0);
         __Vscope_divider_unsigned_pipelined__genblk2__BRA__9__KET____d1.varInsert(__Vfinal,"temp_remainder", &(TOP__divider_unsigned_pipelined__DOT__genblk2__BRA__9__KET____DOT__d1.temp_remainder), false, VLVT_UINT32,VLVD_NODIR|VLVF_PUB_RW,1 ,31,0);
-        __Vscope_divider_unsigned_pipelined__unnamedblk1.varInsert(__Vfinal,"j", &(TOP.divider_unsigned_pipelined__DOT__unnamedblk1__DOT__j), false, VLVT_UINT32,VLVD_NODIR|VLVF_PUB_RW|VLVF_DPI_CLAY,1 ,31,0);
-        __Vscope_divider_unsigned_pipelined__unnamedblk2.varInsert(__Vfinal,"j", &(TOP.divider_unsigned_pipelined__DOT__unnamedblk2__DOT__j), false, VLVT_UINT32,VLVD_NODIR|VLVF_PUB_RW|VLVF_DPI_CLAY,1 ,31,0);
     }
 }
