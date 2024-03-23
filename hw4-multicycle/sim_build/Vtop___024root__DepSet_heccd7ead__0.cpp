@@ -29,6 +29,18 @@ void Vtop___024root___eval_act(Vtop___024root* vlSelf) {
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop___024root___eval_act\n"); );
 }
 
+void Vtop___024root___nba_sequent__TOP__0(Vtop___024root* vlSelf);
+
+void Vtop___024root___eval_nba(Vtop___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    Vtop__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop___024root___eval_nba\n"); );
+    // Body
+    if ((1ULL & vlSelf->__VnbaTriggered.word(0U))) {
+        Vtop___024root___nba_sequent__TOP__0(vlSelf);
+    }
+}
+
 void Vtop___024root___eval_triggers__act(Vtop___024root* vlSelf);
 
 bool Vtop___024root___eval_phase__act(Vtop___024root* vlSelf) {
@@ -48,8 +60,6 @@ bool Vtop___024root___eval_phase__act(Vtop___024root* vlSelf) {
     }
     return (__VactExecute);
 }
-
-void Vtop___024root___eval_nba(Vtop___024root* vlSelf);
 
 bool Vtop___024root___eval_phase__nba(Vtop___024root* vlSelf) {
     if (false && vlSelf) {}  // Prevent unused

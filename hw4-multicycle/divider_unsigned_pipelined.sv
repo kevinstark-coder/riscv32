@@ -15,10 +15,11 @@ module divider_unsigned_pipelined (
     // TODO: your code here
 
     // stage 1 
-    wire [31:0] divided_1[16:0];
-    wire [31:0] remainder_1[16:0];
-    wire [31:0] quotient_1[16:0];
-
+    logic [31:0] divided_1[16:0];
+    logic [31:0] remainder_1[16:0];
+    logic [31:0] quotient_1[16:0];
+    logic [31:0] quotient;
+    logic [31:0] remainder;
 
     assign divided_1[0] = i_dividend;
     assign remainder_1[0] = 0;
@@ -37,11 +38,13 @@ module divider_unsigned_pipelined (
       end
    
       // stage 2
-      wire [31:0] divided_2[16:0];
-      wire [31:0] remainder_2[16:0];
-      wire [31:0] quotient_2[16:0];
-
-
+      logic [31:0] divided_2[16:0];
+      logic [31:0] remainder_2[16:0];
+      logic [31:0] quotient_2[16:0];
+  
+      assign divided_2[0] = divided_1[16];
+      assign remainder_2[0] = remainder_1[16];
+      assign quotient_2[0] = quotient_1[16];
         for (i = 0; i <16; i = i+1) begin
             divu_1iter d1(
               .i_dividend(divided_2[i]), 
@@ -54,28 +57,39 @@ module divider_unsigned_pipelined (
               );
         end
 
-        reg [31:0] remainder,quotient;
-        reg [31:0] a,b,c;
-        always @(posedge clk) begin   
-            a<=32'b0;
-            b<=32'b0;
-            c<=32'b0;
+        always @(posedge clk) begin   //复位信号不要加入到敏感列表中
             if(rst) begin
-                   quotient <= 0;
-                   remainder <= 0;
-            end  
+                for (int j=0; j<17; j=j+1)begin
+                    divided_1[j] <= 32'd0;
+                    remainder_1[j] <= 32'd0;
+                    quotient_1[j] <= 32'd0;
+                end
+               
+                
+            end  //rstn 信号与时钟 clk 同步
             else begin
-                a <= divided_1[16];
-                b <= remainder_1[16];
-                c <= quotient_1[16];
-                quotient <= quotient_2[16];
-                remainder<= remainder_2[16];
+                quotient <= quotient_1[16];
+                remainder <= remainder_1[16];
                 
             end
         end
-        assign   divided_2[0] = a;
-        assign   remainder_2[0] = b;
-        assign   quotient_2[0] = c;
+
+        always @(posedge clk) begin   //复位信号不要加入到敏感列表中
+            if(rst) begin
+                for (int j=0; j<17; j=j+1)begin
+                    divided_2[j] <= 32'd0;
+                    remainder_2[j] <= 32'd0;
+                    quotient_2[j] <= 32'd0;
+                end
+                
+            end  //rstn 信号与时钟 clk 同步
+            else begin
+                quotient <= quotient_2[16];
+                remainder <= remainder_2[16];
+                
+            end
+        end
+
         assign o_quotient = quotient;
         assign o_remainder = remainder;
 
