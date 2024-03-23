@@ -9,14 +9,11 @@
 #define VERILATED_VTOP_H_  // guard
 
 #include "verilated.h"
-#include "verilated_cov.h"
 #include "svdpi.h"
 
 class Vtop__Syms;
 class Vtop___024root;
 class VerilatedFstC;
-class Vtop_divu_1iter;
-
 
 // This class is the main interface to the Verilated model
 class alignas(VL_CACHE_LINE_BYTES) Vtop VL_NOT_FINAL : public VerilatedModel {
@@ -29,48 +26,14 @@ class alignas(VL_CACHE_LINE_BYTES) Vtop VL_NOT_FINAL : public VerilatedModel {
     // PORTS
     // The application code writes and reads these signals to
     // propagate new values into/out from the Verilated model.
-    VL_IN8(&clk,0,0);
+    VL_IN8(&clock_proc,0,0);
+    VL_IN8(&clock_mem,0,0);
     VL_IN8(&rst,0,0);
-    VL_IN(&i_dividend,31,0);
-    VL_IN(&i_divisor,31,0);
-    VL_OUT(&o_remainder,31,0);
-    VL_OUT(&o_quotient,31,0);
+    VL_OUT8(&halt,0,0);
 
     // CELLS
     // Public to allow access to /* verilator public */ items.
     // Otherwise the application code can consider these internals.
-    Vtop_divu_1iter* const __PVT__divider_unsigned_pipelined__DOT__genblk1__BRA__0__KET____DOT__d1;
-    Vtop_divu_1iter* const __PVT__divider_unsigned_pipelined__DOT__genblk1__BRA__1__KET____DOT__d1;
-    Vtop_divu_1iter* const __PVT__divider_unsigned_pipelined__DOT__genblk1__BRA__2__KET____DOT__d1;
-    Vtop_divu_1iter* const __PVT__divider_unsigned_pipelined__DOT__genblk1__BRA__3__KET____DOT__d1;
-    Vtop_divu_1iter* const __PVT__divider_unsigned_pipelined__DOT__genblk1__BRA__4__KET____DOT__d1;
-    Vtop_divu_1iter* const __PVT__divider_unsigned_pipelined__DOT__genblk1__BRA__5__KET____DOT__d1;
-    Vtop_divu_1iter* const __PVT__divider_unsigned_pipelined__DOT__genblk1__BRA__6__KET____DOT__d1;
-    Vtop_divu_1iter* const __PVT__divider_unsigned_pipelined__DOT__genblk1__BRA__7__KET____DOT__d1;
-    Vtop_divu_1iter* const __PVT__divider_unsigned_pipelined__DOT__genblk1__BRA__8__KET____DOT__d1;
-    Vtop_divu_1iter* const __PVT__divider_unsigned_pipelined__DOT__genblk1__BRA__9__KET____DOT__d1;
-    Vtop_divu_1iter* const __PVT__divider_unsigned_pipelined__DOT__genblk1__BRA__10__KET____DOT__d1;
-    Vtop_divu_1iter* const __PVT__divider_unsigned_pipelined__DOT__genblk1__BRA__11__KET____DOT__d1;
-    Vtop_divu_1iter* const __PVT__divider_unsigned_pipelined__DOT__genblk1__BRA__12__KET____DOT__d1;
-    Vtop_divu_1iter* const __PVT__divider_unsigned_pipelined__DOT__genblk1__BRA__13__KET____DOT__d1;
-    Vtop_divu_1iter* const __PVT__divider_unsigned_pipelined__DOT__genblk1__BRA__14__KET____DOT__d1;
-    Vtop_divu_1iter* const __PVT__divider_unsigned_pipelined__DOT__genblk1__BRA__15__KET____DOT__d1;
-    Vtop_divu_1iter* const __PVT__divider_unsigned_pipelined__DOT__genblk2__BRA__0__KET____DOT__d1;
-    Vtop_divu_1iter* const __PVT__divider_unsigned_pipelined__DOT__genblk2__BRA__1__KET____DOT__d1;
-    Vtop_divu_1iter* const __PVT__divider_unsigned_pipelined__DOT__genblk2__BRA__2__KET____DOT__d1;
-    Vtop_divu_1iter* const __PVT__divider_unsigned_pipelined__DOT__genblk2__BRA__3__KET____DOT__d1;
-    Vtop_divu_1iter* const __PVT__divider_unsigned_pipelined__DOT__genblk2__BRA__4__KET____DOT__d1;
-    Vtop_divu_1iter* const __PVT__divider_unsigned_pipelined__DOT__genblk2__BRA__5__KET____DOT__d1;
-    Vtop_divu_1iter* const __PVT__divider_unsigned_pipelined__DOT__genblk2__BRA__6__KET____DOT__d1;
-    Vtop_divu_1iter* const __PVT__divider_unsigned_pipelined__DOT__genblk2__BRA__7__KET____DOT__d1;
-    Vtop_divu_1iter* const __PVT__divider_unsigned_pipelined__DOT__genblk2__BRA__8__KET____DOT__d1;
-    Vtop_divu_1iter* const __PVT__divider_unsigned_pipelined__DOT__genblk2__BRA__9__KET____DOT__d1;
-    Vtop_divu_1iter* const __PVT__divider_unsigned_pipelined__DOT__genblk2__BRA__10__KET____DOT__d1;
-    Vtop_divu_1iter* const __PVT__divider_unsigned_pipelined__DOT__genblk2__BRA__11__KET____DOT__d1;
-    Vtop_divu_1iter* const __PVT__divider_unsigned_pipelined__DOT__genblk2__BRA__12__KET____DOT__d1;
-    Vtop_divu_1iter* const __PVT__divider_unsigned_pipelined__DOT__genblk2__BRA__13__KET____DOT__d1;
-    Vtop_divu_1iter* const __PVT__divider_unsigned_pipelined__DOT__genblk2__BRA__14__KET____DOT__d1;
-    Vtop_divu_1iter* const __PVT__divider_unsigned_pipelined__DOT__genblk2__BRA__15__KET____DOT__d1;
 
     // Root instance pointer to allow access to model internals,
     // including inlined /* verilator public_flat_* */ items.

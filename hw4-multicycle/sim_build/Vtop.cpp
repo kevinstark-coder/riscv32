@@ -10,44 +10,10 @@
 Vtop::Vtop(VerilatedContext* _vcontextp__, const char* _vcname__)
     : VerilatedModel{*_vcontextp__}
     , vlSymsp{new Vtop__Syms(contextp(), _vcname__, this)}
-    , clk{vlSymsp->TOP.clk}
+    , clock_proc{vlSymsp->TOP.clock_proc}
+    , clock_mem{vlSymsp->TOP.clock_mem}
     , rst{vlSymsp->TOP.rst}
-    , i_dividend{vlSymsp->TOP.i_dividend}
-    , i_divisor{vlSymsp->TOP.i_divisor}
-    , o_remainder{vlSymsp->TOP.o_remainder}
-    , o_quotient{vlSymsp->TOP.o_quotient}
-    , __PVT__divider_unsigned_pipelined__DOT__genblk1__BRA__0__KET____DOT__d1{vlSymsp->TOP.__PVT__divider_unsigned_pipelined__DOT__genblk1__BRA__0__KET____DOT__d1}
-    , __PVT__divider_unsigned_pipelined__DOT__genblk1__BRA__1__KET____DOT__d1{vlSymsp->TOP.__PVT__divider_unsigned_pipelined__DOT__genblk1__BRA__1__KET____DOT__d1}
-    , __PVT__divider_unsigned_pipelined__DOT__genblk1__BRA__2__KET____DOT__d1{vlSymsp->TOP.__PVT__divider_unsigned_pipelined__DOT__genblk1__BRA__2__KET____DOT__d1}
-    , __PVT__divider_unsigned_pipelined__DOT__genblk1__BRA__3__KET____DOT__d1{vlSymsp->TOP.__PVT__divider_unsigned_pipelined__DOT__genblk1__BRA__3__KET____DOT__d1}
-    , __PVT__divider_unsigned_pipelined__DOT__genblk1__BRA__4__KET____DOT__d1{vlSymsp->TOP.__PVT__divider_unsigned_pipelined__DOT__genblk1__BRA__4__KET____DOT__d1}
-    , __PVT__divider_unsigned_pipelined__DOT__genblk1__BRA__5__KET____DOT__d1{vlSymsp->TOP.__PVT__divider_unsigned_pipelined__DOT__genblk1__BRA__5__KET____DOT__d1}
-    , __PVT__divider_unsigned_pipelined__DOT__genblk1__BRA__6__KET____DOT__d1{vlSymsp->TOP.__PVT__divider_unsigned_pipelined__DOT__genblk1__BRA__6__KET____DOT__d1}
-    , __PVT__divider_unsigned_pipelined__DOT__genblk1__BRA__7__KET____DOT__d1{vlSymsp->TOP.__PVT__divider_unsigned_pipelined__DOT__genblk1__BRA__7__KET____DOT__d1}
-    , __PVT__divider_unsigned_pipelined__DOT__genblk1__BRA__8__KET____DOT__d1{vlSymsp->TOP.__PVT__divider_unsigned_pipelined__DOT__genblk1__BRA__8__KET____DOT__d1}
-    , __PVT__divider_unsigned_pipelined__DOT__genblk1__BRA__9__KET____DOT__d1{vlSymsp->TOP.__PVT__divider_unsigned_pipelined__DOT__genblk1__BRA__9__KET____DOT__d1}
-    , __PVT__divider_unsigned_pipelined__DOT__genblk1__BRA__10__KET____DOT__d1{vlSymsp->TOP.__PVT__divider_unsigned_pipelined__DOT__genblk1__BRA__10__KET____DOT__d1}
-    , __PVT__divider_unsigned_pipelined__DOT__genblk1__BRA__11__KET____DOT__d1{vlSymsp->TOP.__PVT__divider_unsigned_pipelined__DOT__genblk1__BRA__11__KET____DOT__d1}
-    , __PVT__divider_unsigned_pipelined__DOT__genblk1__BRA__12__KET____DOT__d1{vlSymsp->TOP.__PVT__divider_unsigned_pipelined__DOT__genblk1__BRA__12__KET____DOT__d1}
-    , __PVT__divider_unsigned_pipelined__DOT__genblk1__BRA__13__KET____DOT__d1{vlSymsp->TOP.__PVT__divider_unsigned_pipelined__DOT__genblk1__BRA__13__KET____DOT__d1}
-    , __PVT__divider_unsigned_pipelined__DOT__genblk1__BRA__14__KET____DOT__d1{vlSymsp->TOP.__PVT__divider_unsigned_pipelined__DOT__genblk1__BRA__14__KET____DOT__d1}
-    , __PVT__divider_unsigned_pipelined__DOT__genblk1__BRA__15__KET____DOT__d1{vlSymsp->TOP.__PVT__divider_unsigned_pipelined__DOT__genblk1__BRA__15__KET____DOT__d1}
-    , __PVT__divider_unsigned_pipelined__DOT__genblk2__BRA__0__KET____DOT__d1{vlSymsp->TOP.__PVT__divider_unsigned_pipelined__DOT__genblk2__BRA__0__KET____DOT__d1}
-    , __PVT__divider_unsigned_pipelined__DOT__genblk2__BRA__1__KET____DOT__d1{vlSymsp->TOP.__PVT__divider_unsigned_pipelined__DOT__genblk2__BRA__1__KET____DOT__d1}
-    , __PVT__divider_unsigned_pipelined__DOT__genblk2__BRA__2__KET____DOT__d1{vlSymsp->TOP.__PVT__divider_unsigned_pipelined__DOT__genblk2__BRA__2__KET____DOT__d1}
-    , __PVT__divider_unsigned_pipelined__DOT__genblk2__BRA__3__KET____DOT__d1{vlSymsp->TOP.__PVT__divider_unsigned_pipelined__DOT__genblk2__BRA__3__KET____DOT__d1}
-    , __PVT__divider_unsigned_pipelined__DOT__genblk2__BRA__4__KET____DOT__d1{vlSymsp->TOP.__PVT__divider_unsigned_pipelined__DOT__genblk2__BRA__4__KET____DOT__d1}
-    , __PVT__divider_unsigned_pipelined__DOT__genblk2__BRA__5__KET____DOT__d1{vlSymsp->TOP.__PVT__divider_unsigned_pipelined__DOT__genblk2__BRA__5__KET____DOT__d1}
-    , __PVT__divider_unsigned_pipelined__DOT__genblk2__BRA__6__KET____DOT__d1{vlSymsp->TOP.__PVT__divider_unsigned_pipelined__DOT__genblk2__BRA__6__KET____DOT__d1}
-    , __PVT__divider_unsigned_pipelined__DOT__genblk2__BRA__7__KET____DOT__d1{vlSymsp->TOP.__PVT__divider_unsigned_pipelined__DOT__genblk2__BRA__7__KET____DOT__d1}
-    , __PVT__divider_unsigned_pipelined__DOT__genblk2__BRA__8__KET____DOT__d1{vlSymsp->TOP.__PVT__divider_unsigned_pipelined__DOT__genblk2__BRA__8__KET____DOT__d1}
-    , __PVT__divider_unsigned_pipelined__DOT__genblk2__BRA__9__KET____DOT__d1{vlSymsp->TOP.__PVT__divider_unsigned_pipelined__DOT__genblk2__BRA__9__KET____DOT__d1}
-    , __PVT__divider_unsigned_pipelined__DOT__genblk2__BRA__10__KET____DOT__d1{vlSymsp->TOP.__PVT__divider_unsigned_pipelined__DOT__genblk2__BRA__10__KET____DOT__d1}
-    , __PVT__divider_unsigned_pipelined__DOT__genblk2__BRA__11__KET____DOT__d1{vlSymsp->TOP.__PVT__divider_unsigned_pipelined__DOT__genblk2__BRA__11__KET____DOT__d1}
-    , __PVT__divider_unsigned_pipelined__DOT__genblk2__BRA__12__KET____DOT__d1{vlSymsp->TOP.__PVT__divider_unsigned_pipelined__DOT__genblk2__BRA__12__KET____DOT__d1}
-    , __PVT__divider_unsigned_pipelined__DOT__genblk2__BRA__13__KET____DOT__d1{vlSymsp->TOP.__PVT__divider_unsigned_pipelined__DOT__genblk2__BRA__13__KET____DOT__d1}
-    , __PVT__divider_unsigned_pipelined__DOT__genblk2__BRA__14__KET____DOT__d1{vlSymsp->TOP.__PVT__divider_unsigned_pipelined__DOT__genblk2__BRA__14__KET____DOT__d1}
-    , __PVT__divider_unsigned_pipelined__DOT__genblk2__BRA__15__KET____DOT__d1{vlSymsp->TOP.__PVT__divider_unsigned_pipelined__DOT__genblk2__BRA__15__KET____DOT__d1}
+    , halt{vlSymsp->TOP.halt}
     , rootp{&(vlSymsp->TOP)}
 {
     // Register model with the context

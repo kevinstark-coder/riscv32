@@ -23,11 +23,13 @@ module divider_unsigned_pipelined (
     assign divided_1[0] = i_dividend;
     assign remainder_1[0] = 0;
     assign quotient_1[0] = 0;
+      wire [31:0] divisor_1;
+      reg [31:0] divisor_2;
       genvar i;
       for (i = 0; i <16; i = i+1) begin
           divu_1iter d1(
             .i_dividend(divided_1[i]), 
-            .i_divisor(i_divisor), 
+            .i_divisor(divisor_1), 
             .i_quotient(quotient_1[i]), 
             .i_remainder(remainder_1[i]), 
             .o_dividend(divided_1[i+1]), 
@@ -41,11 +43,12 @@ module divider_unsigned_pipelined (
       wire [31:0] remainder_2[16:0];
       wire [31:0] quotient_2[16:0];
 
-
+        reg [31:0] remainder,quotient;
+        logic [31:0] a,b,c;
         for (i = 0; i <16; i = i+1) begin
             divu_1iter d1(
               .i_dividend(divided_2[i]), 
-              .i_divisor(i_divisor), 
+              .i_divisor(divisor_2), 
               .i_quotient(quotient_2[i]), 
               .i_remainder(remainder_2[i]), 
               .o_dividend(divided_2[i+1]), 
@@ -54,24 +57,28 @@ module divider_unsigned_pipelined (
               );
         end
 
-        reg [31:0] remainder,quotient;
-        reg [31:0] a,b,c;
+        
         always @(posedge clk) begin   
             a<=32'b0;
             b<=32'b0;
-            c<=32'b0;
+            
+            divisor_2 <= 32'b0;
             if(rst) begin
                    quotient <= 0;
                    remainder <= 0;
             end  
             else begin
+                
+                divisor_2 <= divisor_1;
                 a <= divided_1[16];
                 b <= remainder_1[16];
                 c <= quotient_1[16];
-
+                // quotient <= quotient_2[16];
+                // remainder<= remainder_2[16];
                 
             end
         end
+        assign divisor_1 = i_divisor;
         assign   divided_2[0] = a;
         assign   remainder_2[0] = b;
         assign   quotient_2[0] = c;

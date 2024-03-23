@@ -10,9 +10,9 @@ VM_C11 = 1
 # Timing enabled?  0/1
 VM_TIMING = 0
 # Coverage output mode?  0/1 (from --coverage)
-VM_COVERAGE = 1
+VM_COVERAGE = 0
 # Parallel builds?  0/1 (from --output-split)
-VM_PARALLEL_BUILDS = 1
+VM_PARALLEL_BUILDS = 0
 # Tracing output mode?  0/1 (from --trace/--trace-fst)
 VM_TRACE = 1
 # Tracing output mode in VCD format?  0/1 (from --trace)
@@ -26,17 +26,14 @@ VM_CLASSES_FAST += \
 	Vtop \
 	Vtop___024root__DepSet_h84412442__0 \
 	Vtop___024root__DepSet_heccd7ead__0 \
-	Vtop_divu_1iter__DepSet_h902d05a7__0 \
-	Vtop_divu_1iter__DepSet_h902d05a7__1 \
 
 # Generated module classes, non-fast-path, compile with low/medium optimization
 VM_CLASSES_SLOW += \
 	Vtop___024root__Slow \
 	Vtop___024root__DepSet_h84412442__0__Slow \
 	Vtop___024root__DepSet_heccd7ead__0__Slow \
-	Vtop_divu_1iter__Slow \
-	Vtop_divu_1iter__DepSet_h902d05a7__0__Slow \
-	Vtop_divu_1iter__DepSet_hd8615d4a__0__Slow \
+	Vtop___024unit__Slow \
+	Vtop___024unit__DepSet_hff17caec__0__Slow \
 
 # Generated support classes, fast-path, compile with highest optimization
 VM_SUPPORT_FAST += \
@@ -53,7 +50,6 @@ VM_GLOBAL_FAST += \
 	verilated \
 	verilated_dpi \
 	verilated_vpi \
-	verilated_cov \
 	verilated_fst_c \
 	verilated_threads \
 

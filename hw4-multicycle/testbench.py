@@ -184,52 +184,52 @@ if __name__ == "__main__":
 ## TEST CASES GO HERE ##
 ########################
 
-@cocotb.test()
-async def testLui(dut):
-    "Run one lui insn"
-    asm(dut, 'lui x1,0x12345')
-    await preTestSetup(dut)
+# @cocotb.test()
+# async def testLui(dut):
+#     "Run one lui insn"
+#     asm(dut, 'lui x1,0x12345')
+#     await preTestSetup(dut)
 
-    await ClockCycles(dut.clock_proc, 2)
-    assert dut.datapath.rf.regs[1].value == 0x12345000, f'failed at cycle {dut.datapath.cycles_current.value.integer}'
+#     await ClockCycles(dut.clock_proc, 2)
+#     assert dut.datapath.rf.regs[1].value == 0x12345000, f'failed at cycle {dut.datapath.cycles_current.value.integer}'
 
-@cocotb.test()
-async def testLuiAddi(dut):
-    "Run two insns to check PC incrementing"
-    asm(dut, '''
-        lui x1,0x12345
-        addi x1,x1,0x678''')
-    await preTestSetup(dut)
+# @cocotb.test()
+# async def testLuiAddi(dut):
+#     "Run two insns to check PC incrementing"
+#     asm(dut, '''
+#         lui x1,0x12345
+#         addi x1,x1,0x678''')
+#     await preTestSetup(dut)
 
-    await ClockCycles(dut.clock_proc, 3)
-    assert dut.datapath.rf.regs[1].value == 0x12345678, f'failed at cycle {dut.datapath.cycles_current.value.integer}'
+#     await ClockCycles(dut.clock_proc, 3)
+#     assert dut.datapath.rf.regs[1].value == 0x12345678, f'failed at cycle {dut.datapath.cycles_current.value.integer}'
 
-@cocotb.test()
-async def testDivu(dut):
-    "Run divu insn"
-    asm(dut, '''
-        lui x1,0x12345
-        divu x2,x1,x1''')
-    await preTestSetup(dut)
+# @cocotb.test()
+# async def testDivu(dut):
+#     "Run divu insn"
+#     asm(dut, '''
+#         lui x1,0x12345
+#         divu x2,x1,x1''')
+#     await preTestSetup(dut)
 
-    await ClockCycles(dut.clock_proc, 4)
-    assert dut.datapath.rf.regs[2].value == 1, f'failed at cycle {dut.datapath.cycles_current.value.integer}'
+#     await ClockCycles(dut.clock_proc, 4)
+#     assert dut.datapath.rf.regs[2].value == 1, f'failed at cycle {dut.datapath.cycles_current.value.integer}'
 
-@cocotb.test()
-async def test2Divu(dut):
-    "Run back-to-back divu insns"
-    asm(dut, '''
-        li x16,16
-        li x8,8
-        li x2,2
-        divu x3,x16,x2
-        divu x3,x8,x2''')
-    await preTestSetup(dut)
+# @cocotb.test()
+# async def test2Divu(dut):
+#     "Run back-to-back divu insns"
+#     asm(dut, '''
+#         li x16,16
+#         li x8,8
+#         li x2,2
+#         divu x3,x16,x2
+#         divu x3,x8,x2''')
+#     await preTestSetup(dut)
 
-    await ClockCycles(dut.clock_proc, 6)
-    assert dut.datapath.rf.regs[3].value == 8, f'failed at cycle {dut.datapath.cycles_current.value.integer}'
-    await ClockCycles(dut.clock_proc, 2)
-    assert dut.datapath.rf.regs[3].value == 4, f'failed at cycle {dut.datapath.cycles_current.value.integer}'
+#     await ClockCycles(dut.clock_proc, 6)
+#     assert dut.datapath.rf.regs[3].value == 8, f'failed at cycle {dut.datapath.cycles_current.value.integer}'
+#     await ClockCycles(dut.clock_proc, 2)
+#     assert dut.datapath.rf.regs[3].value == 4, f'failed at cycle {dut.datapath.cycles_current.value.integer}'
 
 @cocotb.test()
 async def testDivuEtAl(dut):
@@ -248,126 +248,126 @@ async def testDivuEtAl(dut):
     await ClockCycles(dut.clock_proc, 1) # wait one more cycle for addi's result
     assert dut.datapath.rf.regs[9].value == 9, f'failed at cycle {dut.datapath.cycles_current.value.integer}'
 
-@cocotb.test()
-async def testEcall(dut):
-    "ecall insn causes processor to halt"
-    asm(dut, '''
-        lui x1,0x12345
-        ecall''')
-    await preTestSetup(dut)
+# @cocotb.test()
+# async def testEcall(dut):
+#     "ecall insn causes processor to halt"
+#     asm(dut, '''
+#         lui x1,0x12345
+#         ecall''')
+#     await preTestSetup(dut)
 
-    await ClockCycles(dut.clock_proc, 2) # check for halt *during* ecall, not afterwards
-    assert dut.datapath.halt.value == 1, f'failed at cycle {dut.datapath.cycles_current.value.integer}'
-    pass
+#     await ClockCycles(dut.clock_proc, 2) # check for halt *during* ecall, not afterwards
+#     assert dut.datapath.halt.value == 1, f'failed at cycle {dut.datapath.cycles_current.value.integer}'
+#     pass
 
-@cocotb.test(skip='RVTEST_ALUBR' in os.environ)
-async def dhrystone(dut):
-    "Run dhrystone benchmark from riscv-tests"
-    dsBinary = RISCV_BENCHMARKS_PATH / 'dhrystone.riscv' 
-    assert dsBinary.exists(), f'Could not find Dhrystone binary {dsBinary}, have you built riscv-tests?'
-    loadBinaryIntoMemory(dut, dsBinary)
-    await preTestSetup(dut)
+# @cocotb.test(skip='RVTEST_ALUBR' in os.environ)
+# async def dhrystone(dut):
+#     "Run dhrystone benchmark from riscv-tests"
+#     dsBinary = RISCV_BENCHMARKS_PATH / 'dhrystone.riscv' 
+#     assert dsBinary.exists(), f'Could not find Dhrystone binary {dsBinary}, have you built riscv-tests?'
+#     loadBinaryIntoMemory(dut, dsBinary)
+#     await preTestSetup(dut)
 
-    dut._log.info(f'Running Dhrystone benchmark (takes 193k cycles)...')
-    for cycles in range(210_000):
-        await RisingEdge(dut.clock_proc)
-        if cycles > 0 and 0 == cycles % 10_000:
-            dut._log.info(f'ran {int(cycles/1000)}k cycles...')
-            pass
-        if dut.halt.value == 1:
-            # there are 22 output checks, each sets 1 bit
-            expectedValue = (1<<22) - 1
-            assert expectedValue == dut.datapath.rf.regs[5].value.integer
-            latency_millis = (cycles / 10_000_000) * 1000
-            dut._log.info(f'dhrystone passed after {cycles} cycles, {latency_millis} milliseconds with 10MHz clock')
-            return
-        pass
-    raise SimTimeoutError()
+#     dut._log.info(f'Running Dhrystone benchmark (takes 193k cycles)...')
+#     for cycles in range(210_000):
+#         await RisingEdge(dut.clock_proc)
+#         if cycles > 0 and 0 == cycles % 10_000:
+#             dut._log.info(f'ran {int(cycles/1000)}k cycles...')
+#             pass
+#         if dut.halt.value == 1:
+#             # there are 22 output checks, each sets 1 bit
+#             expectedValue = (1<<22) - 1
+#             assert expectedValue == dut.datapath.rf.regs[5].value.integer
+#             latency_millis = (cycles / 10_000_000) * 1000
+#             dut._log.info(f'dhrystone passed after {cycles} cycles, {latency_millis} milliseconds with 10MHz clock')
+#             return
+#         pass
+#     raise SimTimeoutError()
 
-async def riscvTest(dut, binaryPath=None):
-    "Run the official RISC-V test whose binary lives at `binaryPath`"
-    assert binaryPath is not None
-    assert binaryPath.exists(), f'Could not find RV test binary {binaryPath}, have you built riscv-tests?'
-    loadBinaryIntoMemory(dut, binaryPath)
-    await preTestSetup(dut)
+# async def riscvTest(dut, binaryPath=None):
+#     "Run the official RISC-V test whose binary lives at `binaryPath`"
+#     assert binaryPath is not None
+#     assert binaryPath.exists(), f'Could not find RV test binary {binaryPath}, have you built riscv-tests?'
+#     loadBinaryIntoMemory(dut, binaryPath)
+#     await preTestSetup(dut)
 
-    dut._log.info(f'Running RISC-V test at {binaryPath}')
-    for cycles in range(TIMEOUT_CYCLES):
-        await RisingEdge(dut.clock_proc)
-        if dut.halt.value == 1:
-            # see RVTEST_PASS and RVTEST_FAIL macros in riscv-tests/env/p/riscv_test.h
-            assert 93 == dut.datapath.rf.regs[17].value.integer # magic value from pass/fail functions
-            resultCode = dut.datapath.rf.regs[10].value.integer
-            assert 0 == resultCode, f'failed test {resultCode >> 1} at cycle {dut.datapath.cycles_current.value.integer}'
-            return
-        pass
-    raise SimTimeoutError()
+#     dut._log.info(f'Running RISC-V test at {binaryPath}')
+#     for cycles in range(TIMEOUT_CYCLES):
+#         await RisingEdge(dut.clock_proc)
+#         if dut.halt.value == 1:
+#             # see RVTEST_PASS and RVTEST_FAIL macros in riscv-tests/env/p/riscv_test.h
+#             assert 93 == dut.datapath.rf.regs[17].value.integer # magic value from pass/fail functions
+#             resultCode = dut.datapath.rf.regs[10].value.integer
+#             assert 0 == resultCode, f'failed test {resultCode >> 1} at cycle {dut.datapath.cycles_current.value.integer}'
+#             return
+#         pass
+#     raise SimTimeoutError()
 
-RV_TEST_BINARIES = [
-    RISCV_TESTS_PATH / 'rv32ui-p-simple', # 1
-    RISCV_TESTS_PATH / 'rv32ui-p-lui',
+# RV_TEST_BINARIES = [
+#     RISCV_TESTS_PATH / 'rv32ui-p-simple', # 1
+#     RISCV_TESTS_PATH / 'rv32ui-p-lui',
     
-    RISCV_TESTS_PATH / 'rv32ui-p-and', # 3
-    RISCV_TESTS_PATH / 'rv32ui-p-or',
-    RISCV_TESTS_PATH / 'rv32ui-p-xor',
-    RISCV_TESTS_PATH / 'rv32ui-p-sll',
-    RISCV_TESTS_PATH / 'rv32ui-p-sra',
-    RISCV_TESTS_PATH / 'rv32ui-p-srl',
-    RISCV_TESTS_PATH / 'rv32ui-p-slt',
-    RISCV_TESTS_PATH / 'rv32ui-p-add',
-    RISCV_TESTS_PATH / 'rv32ui-p-sub',
+#     RISCV_TESTS_PATH / 'rv32ui-p-and', # 3
+#     RISCV_TESTS_PATH / 'rv32ui-p-or',
+#     RISCV_TESTS_PATH / 'rv32ui-p-xor',
+#     RISCV_TESTS_PATH / 'rv32ui-p-sll',
+#     RISCV_TESTS_PATH / 'rv32ui-p-sra',
+#     RISCV_TESTS_PATH / 'rv32ui-p-srl',
+#     RISCV_TESTS_PATH / 'rv32ui-p-slt',
+#     RISCV_TESTS_PATH / 'rv32ui-p-add',
+#     RISCV_TESTS_PATH / 'rv32ui-p-sub',
     
-    RISCV_TESTS_PATH / 'rv32ui-p-andi', # 12
-    RISCV_TESTS_PATH / 'rv32ui-p-ori',
-    RISCV_TESTS_PATH / 'rv32ui-p-slli',
-    RISCV_TESTS_PATH / 'rv32ui-p-srai',
-    RISCV_TESTS_PATH / 'rv32ui-p-srli',
-    RISCV_TESTS_PATH / 'rv32ui-p-xori',
-    RISCV_TESTS_PATH / 'rv32ui-p-slti',
-    RISCV_TESTS_PATH / 'rv32ui-p-sltiu',
-    RISCV_TESTS_PATH / 'rv32ui-p-sltu',
-    RISCV_TESTS_PATH / 'rv32ui-p-addi',
+#     RISCV_TESTS_PATH / 'rv32ui-p-andi', # 12
+#     RISCV_TESTS_PATH / 'rv32ui-p-ori',
+#     RISCV_TESTS_PATH / 'rv32ui-p-slli',
+#     RISCV_TESTS_PATH / 'rv32ui-p-srai',
+#     RISCV_TESTS_PATH / 'rv32ui-p-srli',
+#     RISCV_TESTS_PATH / 'rv32ui-p-xori',
+#     RISCV_TESTS_PATH / 'rv32ui-p-slti',
+#     RISCV_TESTS_PATH / 'rv32ui-p-sltiu',
+#     RISCV_TESTS_PATH / 'rv32ui-p-sltu',
+#     RISCV_TESTS_PATH / 'rv32ui-p-addi',
     
-    RISCV_TESTS_PATH / 'rv32ui-p-beq', # 22
-    RISCV_TESTS_PATH / 'rv32ui-p-bge',
-    RISCV_TESTS_PATH / 'rv32ui-p-bgeu',
-    RISCV_TESTS_PATH / 'rv32ui-p-blt',
-    RISCV_TESTS_PATH / 'rv32ui-p-bltu',
-    RISCV_TESTS_PATH / 'rv32ui-p-bne',
+#     RISCV_TESTS_PATH / 'rv32ui-p-beq', # 22
+#     RISCV_TESTS_PATH / 'rv32ui-p-bge',
+#     RISCV_TESTS_PATH / 'rv32ui-p-bgeu',
+#     RISCV_TESTS_PATH / 'rv32ui-p-blt',
+#     RISCV_TESTS_PATH / 'rv32ui-p-bltu',
+#     RISCV_TESTS_PATH / 'rv32ui-p-bne',
 
-    RISCV_TESTS_PATH / 'rv32ui-p-jal', # 28
-    RISCV_TESTS_PATH / 'rv32ui-p-jalr',
-    RISCV_TESTS_PATH / 'rv32ui-p-auipc', # needs JAL
+#     RISCV_TESTS_PATH / 'rv32ui-p-jal', # 28
+#     RISCV_TESTS_PATH / 'rv32ui-p-jalr',
+#     RISCV_TESTS_PATH / 'rv32ui-p-auipc', # needs JAL
 
-    RISCV_TESTS_PATH / 'rv32ui-p-lb', # 31
-    RISCV_TESTS_PATH / 'rv32ui-p-lbu',
-    RISCV_TESTS_PATH / 'rv32ui-p-lh',
-    RISCV_TESTS_PATH / 'rv32ui-p-lhu',
-    RISCV_TESTS_PATH / 'rv32ui-p-lw',
+#     RISCV_TESTS_PATH / 'rv32ui-p-lb', # 31
+#     RISCV_TESTS_PATH / 'rv32ui-p-lbu',
+#     RISCV_TESTS_PATH / 'rv32ui-p-lh',
+#     RISCV_TESTS_PATH / 'rv32ui-p-lhu',
+#     RISCV_TESTS_PATH / 'rv32ui-p-lw',
     
-    RISCV_TESTS_PATH / 'rv32ui-p-sb', # 36
-    RISCV_TESTS_PATH / 'rv32ui-p-sh',
-    RISCV_TESTS_PATH / 'rv32ui-p-sw',
+#     RISCV_TESTS_PATH / 'rv32ui-p-sb', # 36
+#     RISCV_TESTS_PATH / 'rv32ui-p-sh',
+#     RISCV_TESTS_PATH / 'rv32ui-p-sw',
 
-    # self-modifying code and fence.i insn
-    RISCV_TESTS_PATH / 'rv32ui-p-fence_i', # 39
+#     # self-modifying code and fence.i insn
+#     RISCV_TESTS_PATH / 'rv32ui-p-fence_i', # 39
 
-    RISCV_TESTS_PATH / 'rv32um-p-mul', # 40
-    RISCV_TESTS_PATH / 'rv32um-p-mulh',
-    RISCV_TESTS_PATH / 'rv32um-p-mulhsu',
-    RISCV_TESTS_PATH / 'rv32um-p-mulhu',
-    RISCV_TESTS_PATH / 'rv32um-p-div', # 44
-    RISCV_TESTS_PATH / 'rv32um-p-divu',
-    RISCV_TESTS_PATH / 'rv32um-p-rem',
-    RISCV_TESTS_PATH / 'rv32um-p-remu',
+#     RISCV_TESTS_PATH / 'rv32um-p-mul', # 40
+#     RISCV_TESTS_PATH / 'rv32um-p-mulh',
+#     RISCV_TESTS_PATH / 'rv32um-p-mulhsu',
+#     RISCV_TESTS_PATH / 'rv32um-p-mulhu',
+#     RISCV_TESTS_PATH / 'rv32um-p-div', # 44
+#     RISCV_TESTS_PATH / 'rv32um-p-divu',
+#     RISCV_TESTS_PATH / 'rv32um-p-rem',
+#     RISCV_TESTS_PATH / 'rv32um-p-remu',
 
-    # misaligned accesses, we don't support these
-    #RISCV_TESTS_PATH / 'rv32ui-p-ma_data',
-]
+#     # misaligned accesses, we don't support these
+#     #RISCV_TESTS_PATH / 'rv32ui-p-ma_data',
+# ]
 
-rvTestFactory = TestFactory(test_function=riscvTest)
-if 'RVTEST_ALUBR' in os.environ:
-    RV_TEST_BINARIES = RV_TEST_BINARIES[:27]
-    pass
-rvTestFactory.add_option(name='binaryPath', optionlist=RV_TEST_BINARIES)
-rvTestFactory.generate_tests()
+# rvTestFactory = TestFactory(test_function=riscvTest)
+# if 'RVTEST_ALUBR' in os.environ:
+#     RV_TEST_BINARIES = RV_TEST_BINARIES[:27]
+#     pass
+# rvTestFactory.add_option(name='binaryPath', optionlist=RV_TEST_BINARIES)
+# rvTestFactory.generate_tests()

@@ -6,6 +6,24 @@
 #include "Vtop__Syms.h"
 #include "Vtop___024root.h"
 
+// Parameter definitions for Vtop___024root
+constexpr CData/*6:0*/ Vtop___024root::RiscvProcessor__DOT__datapath__DOT__OpLoad;
+constexpr CData/*6:0*/ Vtop___024root::RiscvProcessor__DOT__datapath__DOT__OpStore;
+constexpr CData/*6:0*/ Vtop___024root::RiscvProcessor__DOT__datapath__DOT__OpBranch;
+constexpr CData/*6:0*/ Vtop___024root::RiscvProcessor__DOT__datapath__DOT__OpJalr;
+constexpr CData/*6:0*/ Vtop___024root::RiscvProcessor__DOT__datapath__DOT__OpMiscMem;
+constexpr CData/*6:0*/ Vtop___024root::RiscvProcessor__DOT__datapath__DOT__OpJal;
+constexpr CData/*6:0*/ Vtop___024root::RiscvProcessor__DOT__datapath__DOT__OpRegImm;
+constexpr CData/*6:0*/ Vtop___024root::RiscvProcessor__DOT__datapath__DOT__OpRegReg;
+constexpr CData/*6:0*/ Vtop___024root::RiscvProcessor__DOT__datapath__DOT__OpEnviron;
+constexpr CData/*6:0*/ Vtop___024root::RiscvProcessor__DOT__datapath__DOT__OpAuipc;
+constexpr CData/*6:0*/ Vtop___024root::RiscvProcessor__DOT__datapath__DOT__OpLui;
+constexpr IData/*31:0*/ Vtop___024root::RiscvProcessor__DOT__mem__DOT__NUM_WORDS;
+constexpr IData/*31:0*/ Vtop___024root::RiscvProcessor__DOT__mem__DOT__AddrMsb;
+constexpr IData/*31:0*/ Vtop___024root::RiscvProcessor__DOT__mem__DOT__AddrLsb;
+constexpr IData/*31:0*/ Vtop___024root::RiscvProcessor__DOT__datapath__DOT__rf__DOT__NumRegs;
+
+
 void Vtop___024root___ctor_var_reset(Vtop___024root* vlSelf);
 
 Vtop___024root::Vtop___024root(Vtop__Syms* symsp, const char* v__name)
@@ -16,23 +34,9 @@ Vtop___024root::Vtop___024root(Vtop__Syms* symsp, const char* v__name)
     Vtop___024root___ctor_var_reset(this);
 }
 
-void Vtop___024root___configure_coverage(Vtop___024root* vlSelf, bool first);
-
 void Vtop___024root::__Vconfigure(bool first) {
     if (false && first) {}  // Prevent unused
-    Vtop___024root___configure_coverage(this, first);
 }
 
 Vtop___024root::~Vtop___024root() {
-}
-
-// Coverage
-void Vtop___024root::__vlCoverInsert(uint32_t* countp, bool enable, const char* filenamep, int lineno, int column,
-    const char* hierp, const char* pagep, const char* commentp, const char* linescovp) {
-    uint32_t* count32p = countp;
-    static uint32_t fake_zero_count = 0;
-    if (!enable) count32p = &fake_zero_count;
-    *count32p = 0;
-    VL_COVER_INSERT(vlSymsp->_vm_contextp__->coveragep(), count32p,  "filename",filenamep,  "lineno",lineno,  "column",column,
-        "hier",std::string{name()} + hierp,  "page",pagep,  "comment",commentp,  (linescovp[0] ? "linescov" : ""), linescovp);
 }
